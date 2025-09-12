@@ -1,0 +1,17 @@
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\bin\Debug\net9.0\Workshop.Persistence.deps.json
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\bin\Debug\net9.0\Workshop.Persistence.dll
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\bin\Debug\net9.0\Workshop.Persistence.pdb
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\Workshop.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\Workshop.Persistence.AssemblyInfoInputs.cache
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\Workshop.Persistence.AssemblyInfo.cs
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\Workshop.Persistence.csproj.CoreCompileInputs.cache
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\Workshop.Persistence.dll
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\refint\Workshop.Persistence.dll
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\Workshop.Persistence.pdb
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\ref\Workshop.Persistence.dll
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\bin\Debug\net9.0\Workshop.DomainModels.dll
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\bin\Debug\net9.0\Workshop.DomainModels.pdb
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\Workshop.Persistence.csproj.AssemblyReference.cache
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\Workshop.B2170ABD.Up2Date
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\bin\Debug\net9.0\Workshop.Persistence.runtimeconfig.json
+X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Persistence\obj\Debug\net9.0\Workshop.Persistence.genruntimeconfig.cache

@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+option csharp_namespace = "Workshop.BackendApi";
+
+package customer;
+
+// The greeting service definition.
+service Customer {
+  rpc GetCustomers (CustomersRequest) returns (CustomersReply);
+  rpc GetCustomer (CustomerRequest) returns (CustomerReply);
+  rpc AddCustomer (AddCustomerRequest) returns (AddCustomerReply);
+  rpc UpdateCustomer (UpdateCustomerRequest) returns (UpdateCustomerReply);
+  rpc DeleteCustomer (DeleteCustomerRequest) returns (DeleteCustomerReply);
+}
+
+message CustomersRequest {
+}
+
+message CustomersReply {
+  repeated CustomersListReply customers = 1;
+}
+
+message CustomersListReply {
+  sint32 id = 1;  
+  string name = 2;
+}
+
+message CustomerRequest {
+  sint32 id = 1;
+}
+
+message CustomerReply {
+  sint32 id = 1;  
+  string name = 2;
+  string email = 3;
+  string phone = 4;
+}
+
+message AddCustomerRequest {  
+  string name = 1;
+  string email = 2;
+  string phone = 3;
+}
+
+message AddCustomerReply {
+  sint32 id = 1;  
+}
+
+message UpdateCustomerRequest {
+  sint32 id = 1;  
+  string name = 2;
+  string email = 3;
+  string phone = 4;
+}
+
+message UpdateCustomerReply {
+  bool result = 1;  
+}
+
+message DeleteCustomerRequest {
+  sint32 id = 1;  
+}
+
+message DeleteCustomerReply {
+  bool result = 1;  
+}

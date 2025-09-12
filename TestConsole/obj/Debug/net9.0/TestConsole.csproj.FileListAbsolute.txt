@@ -1,0 +1,15 @@
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\bin\Debug\net9.0\TestConsole.exe
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\bin\Debug\net9.0\TestConsole.deps.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\bin\Debug\net9.0\TestConsole.runtimeconfig.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\bin\Debug\net9.0\TestConsole.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\bin\Debug\net9.0\TestConsole.pdb
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\obj\Debug\net9.0\TestConsole.GeneratedMSBuildEditorConfig.editorconfig
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\obj\Debug\net9.0\TestConsole.AssemblyInfoInputs.cache
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\obj\Debug\net9.0\TestConsole.AssemblyInfo.cs
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\obj\Debug\net9.0\TestConsole.csproj.CoreCompileInputs.cache
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\obj\Debug\net9.0\TestConsole.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\obj\Debug\net9.0\refint\TestConsole.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\obj\Debug\net9.0\TestConsole.pdb
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\obj\Debug\net9.0\TestConsole.genruntimeconfig.cache
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\obj\Debug\net9.0\ref\TestConsole.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\TestConsole\obj\Debug\net9.0\TestConsole.sourcelink.json

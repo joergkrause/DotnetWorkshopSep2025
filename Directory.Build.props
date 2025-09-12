@@ -1,10 +1,10 @@
 <Project>
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
-        <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <NoWarn>NU1903;NU1900</NoWarn>
+        <NoWarn></NoWarn>
         <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
     </PropertyGroup>
 </Project>

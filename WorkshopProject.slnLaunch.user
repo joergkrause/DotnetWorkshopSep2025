@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Workshop.BackendApi\\Workshop.BackendApi.csproj",
+        "Action": "Start",
+        "DebugTarget": "HTTP DemoCase"
+      },
+      {
+        "Path": "CustomerFrontendApp\\CustomerFrontendApp.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
