@@ -1,5 +1,6 @@
 using Grpc.Core;
 using Workshop.BackendApi;
+using Workshop.DataTransferModels;
 using Workshop.Persistence.Respositories;
 
 namespace Workshop.BackendApi.Services
@@ -42,16 +43,16 @@ namespace Workshop.BackendApi.Services
 
     public override async Task<AddCustomerReply> AddCustomer(AddCustomerRequest request, ServerCallContext context)
     {
-      var model = new DomainModels.Customer
+      var model = new CustomerAddDto
       {
         Name = request.Name,
         Email = request.Email,
         Phone = request.Phone
       };
-      await _customerRepository.AddAsync(model);
+      var id = await _customerRepository.AddAsync(model);
       var reply = new AddCustomerReply
       {
-        Id = model.Id
+        Id = id
       };
       return reply;
     }

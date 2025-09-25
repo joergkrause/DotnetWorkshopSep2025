@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
+using static System.ComponentModel.DataAnnotations.Validator;
 using Workshop.DataTransferModels;
 using Workshop.Persistence.Respositories;
+using System.ComponentModel.DataAnnotations;
+using FluentValidation;
 
 namespace Workshop.BackendRestMinimal.Mappings;
 
@@ -42,13 +45,40 @@ public static class MapCustomerEndpointExtension
     .Produces<CustomerDto>()
     .ProducesProblem(StatusCodes.Status404NotFound);
 
-    app.MapPost("/customer", async ([FromServices] ICustomerRepository customerRepo, [FromBody] CustomerDto customer) =>
+    // DataAnnotations Validation Example
+    //app.MapPost("/customer", async ([FromServices] ICustomerRepository customerRepo, [FromBody] CustomerAddDto customer) =>
+    //{
+    //  var results = new List<ValidationResult>();
+    //  var isValid = TryValidateObject(customer, new ValidationContext(customer), results, true);
+
+    //  if (!isValid)
+    //  {
+    //    return Results.BadRequest(results);
+    //  }
+
+    //  var customerId = await customerRepo.AddAsync(customer);
+    //  return Results.Created($"/customer/{customerId}", customer);
+    //})
+    //.WithName("AddCustomer")
+    //.Produces<CustomerDto>()
+    //.Produces<IEnumerable<ValidationResult>>(StatusCodes.Status400BadRequest)
+    //;
+
+    app.MapPost("/customer", async ([FromServices] ICustomerRepository customerRepo, IValidator<CustomerAddDto> validator, [FromBody] CustomerAddDto customer) =>
     {
-      await customerRepo.AddAsync(customer);
-      return Results.Created($"/customer/{customer.Id}", customer);
+      var validationResult = await validator.ValidateAsync(customer);
+      if (!validationResult.IsValid)
+      {
+        return Results.BadRequest(validationResult.Errors);
+      }
+
+      var customerId = await customerRepo.AddAsync(customer);
+      return Results.Created($"/customer/{customerId}", customer);
     })
     .WithName("AddCustomer")
-    .Produces<string>();
+    .Produces<CustomerDto>()
+    .Produces<IEnumerable<ValidationResult>>(StatusCodes.Status400BadRequest)
+    ;
 
     app.MapPut("/customer/{id:int}", async ([FromServices] ICustomerRepository customerRepo, [FromRoute] int id, [FromBody] CustomerDto customer) =>
     {

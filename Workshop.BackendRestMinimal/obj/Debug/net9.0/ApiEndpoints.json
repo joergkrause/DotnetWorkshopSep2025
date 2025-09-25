@@ -28,17 +28,24 @@
     "Parameters": [
       {
         "Name": "customer",
-        "Type": "Workshop.DataTransferModels.CustomerDto",
+        "Type": "Workshop.DataTransferModels.CustomerAddDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "Workshop.DataTransferModels.CustomerDto",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.ComponentModel.DataAnnotations.ValidationResult, System.ComponentModel.Annotations, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
       }
     ],
     "EndpointName": "AddCustomer"

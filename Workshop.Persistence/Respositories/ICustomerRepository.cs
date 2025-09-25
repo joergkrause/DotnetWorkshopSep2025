@@ -4,7 +4,7 @@ namespace Workshop.Persistence.Respositories;
 
 public interface ICustomerRepository
 {
-  Task AddAsync(CustomerDto customer);
+  Task<int> AddAsync(CustomerAddDto customer);
   Task DeleteAsync(int id);
   Task<List<CustomerListDto>> GetAllAsync();
   Task<List<CustomerDto>> GetAllAsync(string searchName);

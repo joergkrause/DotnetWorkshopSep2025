@@ -47,6 +47,19 @@
           }
         }
       },
+      "FluentValidation/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Google.Protobuf/3.21.5": {
         "type": "package",
         "compile": {
@@ -1204,6 +1217,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "FluentValidation": "12.0.0",
           "Mapster": "7.4.0",
           "Mapster.DependencyInjection": "1.0.1",
           "Microsoft.EntityFrameworkCore": "9.0.9",
@@ -1257,6 +1271,21 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "FluentValidation/12.0.0": {
+      "sha512": "8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "type": "package",
+      "path": "fluentvalidation/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.0.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
       ]
     },
     "Google.Protobuf/3.21.5": {
@@ -3291,6 +3320,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Grpc.AspNetCore >= 2.49.0",
+      "Workshop.DataTransferModels >= 1.0.0",
       "Workshop.DomainModels >= 1.0.0",
       "Workshop.Persistence >= 1.0.0"
     ]
@@ -3329,6 +3359,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.DataTransferModels\\Workshop.DataTransferModels.csproj": {
+              "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.DataTransferModels\\Workshop.DataTransferModels.csproj"
+            },
             "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.DomainModels\\Workshop.DomainModels.csproj": {
               "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.DomainModels\\Workshop.DomainModels.csproj"
             },
@@ -3362,6 +3395,8 @@
           }
         },
         "centralPackageVersions": {
+          "FluentValidation": "12.0.0",
+          "FluentValidation.DependencyInjectionExtensions": "12.0.0",
           "Grpc.AspNetCore": "2.49.0",
           "Grpc.Core.Testing": "2.46.6",
           "Mapster": "7.4.0",

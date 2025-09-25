@@ -1,6 +1,9 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Workshop.BackendRestMinimal.Mappings;
+using Workshop.DataTransferModels;
 using Workshop.Persistence;
+using Workshop.Persistence.Validation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +20,8 @@ builder.Services.AddDbContext<Workshop.Persistence.WorkshopContext>(options =>
   }
 });
 
+builder.Services.AddScoped<ICustomValidatorService, CustomValidatorService>();
+builder.Services.AddValidatorsFromAssemblyContaining<CustomerAddDtoValidator>();
 builder.Services.AddPersistenceDependencies();
 builder.Services.AddMapsterMappings();
 

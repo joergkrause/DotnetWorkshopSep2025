@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9XwSZgppWIk=",
+  "dgSpecHash": "4WZu2x8iEow=",
   "success": true,
   "projectFilePath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Backend.Tests\\Workshop.Backend.Tests.csproj",
   "expectedPackageFiles": [
     "D:\\Packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "D:\\Packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "D:\\Packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "D:\\Packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "D:\\Packages\\google.protobuf\\3.21.5\\google.protobuf.3.21.5.nupkg.sha512",
     "D:\\Packages\\grpc.aspnetcore\\2.49.0\\grpc.aspnetcore.2.49.0.nupkg.sha512",
     "D:\\Packages\\grpc.aspnetcore.server\\2.49.0\\grpc.aspnetcore.server.2.49.0.nupkg.sha512",

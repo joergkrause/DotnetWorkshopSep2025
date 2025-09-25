@@ -43,11 +43,12 @@ public class CustomerRepository(IServiceProvider serviceProvider) : ICustomerRep
     return _mapper.Map<CustomerDto?>(model);
   }
 
-  public async Task AddAsync(CustomerDto customer)
+  public async Task<int> AddAsync(CustomerAddDto customer)
   {
     var model = _mapper.Map<DomainModels.Customer>(customer);
     Context.Customers.Add(model);
     await Context.SaveChangesAsync();
+    return model.Id;
   }
 
   public async Task UpdateAsync(CustomerDto customer)

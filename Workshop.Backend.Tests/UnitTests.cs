@@ -3,6 +3,7 @@ using Grpc.Core.Testing;
 using Microsoft.Extensions.Logging;
 using Moq;
 using Workshop.BackendApi.Services;
+using Workshop.DataTransferModels;
 using Workshop.Persistence.Respositories;
 
 namespace Workshop.Backend.Tests
@@ -27,10 +28,10 @@ namespace Workshop.Backend.Tests
     {
       // Arrange
       var sut = new CustomerService(loggerMock.Object, customerRepoMock.Object);
-      customerRepoMock.Setup(repo => repo.GetAllAsync()).ReturnsAsync(new List<DomainModels.Customer>
+      customerRepoMock.Setup(repo => repo.GetAllAsync()).ReturnsAsync(new List<CustomerListDto>
       {
-        new DomainModels.Customer { Id = 1, Name = "John Doe", Email = "test@test.de", Phone = "1234567890" },
-        new DomainModels.Customer { Id = 2, Name = "Jane Smith", Email = "jane@test.de" , Phone = "0987654321" }
+        new CustomerListDto { Id = 1, Name = "John Doe"  },
+        new CustomerListDto { Id = 2, Name = "Jane Smith" }
       });
       // Act
       

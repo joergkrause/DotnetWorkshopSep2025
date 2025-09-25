@@ -48,6 +48,34 @@ namespace Workshop.Persistence.Migrations
 
                     b.ToTable("Customers");
                 });
+
+            modelBuilder.Entity("Workshop.DomainModels.Setting", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Value")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Settings", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "NameMaxLength",
+                            Value = 100
+                        });
+                });
 #pragma warning restore 612, 618
         }
     }

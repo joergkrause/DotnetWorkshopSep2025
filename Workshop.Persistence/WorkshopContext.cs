@@ -21,6 +21,12 @@ public class WorkshopContext : DbContext
       entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
       entity.Property(e => e.Phone).IsRequired().HasMaxLength(15);
     });
+
+    modelBuilder.Entity<DomainModels.Setting>().ToTable("Settings");
+    modelBuilder.Entity<DomainModels.Setting>().HasKey(e => e.Id);
+    modelBuilder.Entity<DomainModels.Setting>().HasData(
+      new DomainModels.Setting { Id = 1, Name = "NameMaxLength", Value = 100 }
+    );
   }
 
   public class DbContextDesignTimeFactory : IDesignTimeDbContextFactory<WorkshopContext>

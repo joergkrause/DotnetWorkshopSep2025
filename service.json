@@ -24,7 +24,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CustomerDto"
+                    "$ref": "#/components/schemas/CustomerListDto"
                   }
                 }
               }
@@ -41,7 +41,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerDto"
+                "$ref": "#/components/schemas/CustomerAddDto"
               }
             }
           },
@@ -53,7 +53,86 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "string"
+                  "$ref": "#/components/schemas/CustomerDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ValidationResult"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customer/search": {
+      "get": {
+        "tags": [
+          "Workshop.BackendRestMinimal"
+        ],
+        "operationId": "SearchCustomers",
+        "parameters": [
+          {
+            "name": "search",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CustomerDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customer/query": {
+      "post": {
+        "tags": [
+          "Workshop.BackendRestMinimal"
+        ],
+        "operationId": "QueryCustomers",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QueryDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CustomerDto"
+                  }
                 }
               }
             }
@@ -186,17 +265,14 @@
   },
   "components": {
     "schemas": {
-      "CustomerDto": {
+      "CustomerAddDto": {
         "required": [
-          "name",
           "email",
           "phone"
         ],
         "type": "object",
         "properties": {
           "name": {
-            "maxLength": 100,
-            "minLength": 0,
             "type": "string"
           },
           "email": {
@@ -208,12 +284,41 @@
             "maxLength": 15,
             "minLength": 0,
             "type": "string"
+          }
+        }
+      },
+      "CustomerDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
           },
           "id": {
             "type": "integer",
             "format": "int32"
           }
         }
+      },
+      "CustomerListDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "Operation": {
+        "type": "integer"
       },
       "ProblemDetails": {
         "type": "object",
@@ -236,6 +341,36 @@
             "nullable": true
           },
           "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "QueryDto": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "string"
+          },
+          "op": {
+            "$ref": "#/components/schemas/Operation"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      },
+      "ValidationResult": {
+        "type": "object",
+        "properties": {
+          "memberNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "errorMessage": {
             "type": "string",
             "nullable": true
           }

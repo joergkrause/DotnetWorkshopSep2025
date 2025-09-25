@@ -1,2 +1,2 @@
 wwwroot\app.css
-X:\Apps\Customers\qh\project\WorkshopProject\CustomerFrontendApp\wwwroot\app.css
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\CustomerFrontendApp\wwwroot\app.css

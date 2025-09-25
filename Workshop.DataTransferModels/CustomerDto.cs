@@ -25,21 +25,6 @@ public class CustomerListDto : DtoBase
 
 }
 
-public class CustomerAddDto
-{
-  [JsonPropertyName("name")]
-  [Required, StringLength(100)]
-  public string Name { get; set; } = default!;
-
-  [JsonPropertyName("email")]
-  [EmailAddress, StringLength(100), Required]
-  public string Email { get; set; } = default!;
-
-  [JsonPropertyName("phone")]
-  [Phone, Required, StringLength(15)]
-  public string Phone { get; set; } = default!;
-}
-
 public class CustomerPatchDto : DtoBase
 {
   [Required]

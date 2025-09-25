@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Workshop.DataTransferModels\Workshop.DataTransferModels.csproj" />
     <ProjectReference Include="..\Workshop.DomainModels\Workshop.DomainModels.csproj" />
     <ProjectReference Include="..\Workshop.Persistence\Workshop.Persistence.csproj" />
   </ItemGroup>

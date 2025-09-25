@@ -30,9 +30,9 @@ Accept: application/json
 POST {{Workshop.BackendRestMinimal_HostAddress}}/customer/
 Content-Type: application/json
 {
-  "name": "John",
-  "phone": "123468",
-  "email": "demo@demo.de"
+  "name": "JohnnyDepp",
+  "phone": null,
+  "email": "demo@jonny.de"
 }
 
 ###

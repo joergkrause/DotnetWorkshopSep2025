@@ -34,6 +34,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.DataTransferModels\\Workshop.DataTransferModels.csproj": {
+                "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.DataTransferModels\\Workshop.DataTransferModels.csproj"
+              },
               "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.DomainModels\\Workshop.DomainModels.csproj": {
                 "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.DomainModels\\Workshop.DomainModels.csproj"
               },
@@ -67,6 +70,8 @@
             }
           },
           "centralPackageVersions": {
+            "FluentValidation": "12.0.0",
+            "FluentValidation.DependencyInjectionExtensions": "12.0.0",
             "Grpc.AspNetCore": "2.49.0",
             "Grpc.Core.Testing": "2.46.6",
             "Mapster": "7.4.0",
@@ -151,6 +156,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "centralPackageVersions": {
+            "FluentValidation": "12.0.0",
+            "FluentValidation.DependencyInjectionExtensions": "12.0.0",
             "Grpc.AspNetCore": "2.49.0",
             "Grpc.Core.Testing": "2.46.6",
             "Mapster": "7.4.0",
@@ -232,6 +239,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "centralPackageVersions": {
+            "FluentValidation": "12.0.0",
+            "FluentValidation.DependencyInjectionExtensions": "12.0.0",
             "Grpc.AspNetCore": "2.49.0",
             "Grpc.Core.Testing": "2.46.6",
             "Mapster": "7.4.0",
@@ -320,6 +329,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )",
+              "versionCentrallyManaged": true
+            },
             "Mapster": {
               "target": "Package",
               "version": "[7.4.0, )",
@@ -349,6 +363,8 @@
             }
           },
           "centralPackageVersions": {
+            "FluentValidation": "12.0.0",
+            "FluentValidation.DependencyInjectionExtensions": "12.0.0",
             "Grpc.AspNetCore": "2.49.0",
             "Grpc.Core.Testing": "2.46.6",
             "Mapster": "7.4.0",
