@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36429.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		service.json = service.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{C923163A-9E58-49E1-A8CA-DB1AC2A255E4}"
 EndProject
@@ -28,6 +31,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8C92EE01-FAD7-4F1E-9418-34397CE28ACE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.Backend.Tests", "Workshop.Backend.Tests\Workshop.Backend.Tests.csproj", "{BE0E912E-1A53-4689-B556-5570E13AE5F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.BackendRest", "Workshop.BackendRest\Workshop.BackendRest.csproj", "{E7AF48D9-CCEB-41A1-9C8D-5C5F804EEE0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.BackendRestMinimal", "Workshop.BackendRestMinimal\Workshop.BackendRestMinimal.csproj", "{5BB59FE8-44F6-4EA7-915D-90B0A19E0E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.DataTransferModels", "Workshop.DataTransferModels\Workshop.DataTransferModels.csproj", "{0C7C379A-563A-4A94-985F-1ECFA8E07B28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +68,18 @@ Global
 		{BE0E912E-1A53-4689-B556-5570E13AE5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE0E912E-1A53-4689-B556-5570E13AE5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE0E912E-1A53-4689-B556-5570E13AE5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7AF48D9-CCEB-41A1-9C8D-5C5F804EEE0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7AF48D9-CCEB-41A1-9C8D-5C5F804EEE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7AF48D9-CCEB-41A1-9C8D-5C5F804EEE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7AF48D9-CCEB-41A1-9C8D-5C5F804EEE0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB59FE8-44F6-4EA7-915D-90B0A19E0E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB59FE8-44F6-4EA7-915D-90B0A19E0E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB59FE8-44F6-4EA7-915D-90B0A19E0E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB59FE8-44F6-4EA7-915D-90B0A19E0E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C7C379A-563A-4A94-985F-1ECFA8E07B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7C379A-563A-4A94-985F-1ECFA8E07B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7C379A-563A-4A94-985F-1ECFA8E07B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7C379A-563A-4A94-985F-1ECFA8E07B28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +91,9 @@ Global
 		{F19F2E73-55CF-4C18-96F4-38B1F81745EC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{62EA2B2F-82BE-4DF4-9BB6-00AFFB78A806} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{BE0E912E-1A53-4689-B556-5570E13AE5F5} = {8C92EE01-FAD7-4F1E-9418-34397CE28ACE}
+		{E7AF48D9-CCEB-41A1-9C8D-5C5F804EEE0A} = {C923163A-9E58-49E1-A8CA-DB1AC2A255E4}
+		{5BB59FE8-44F6-4EA7-915D-90B0A19E0E72} = {C923163A-9E58-49E1-A8CA-DB1AC2A255E4}
+		{0C7C379A-563A-4A94-985F-1ECFA8E07B28} = {C923163A-9E58-49E1-A8CA-DB1AC2A255E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C38DDB6-A68A-4EC5-BA80-1CE8B4B25B54}

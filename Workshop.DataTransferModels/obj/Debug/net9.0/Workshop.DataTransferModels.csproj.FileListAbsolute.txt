@@ -1,0 +1,12 @@
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\bin\Debug\net9.0\Workshop.DataTransferModels.deps.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\bin\Debug\net9.0\Workshop.DataTransferModels.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\bin\Debug\net9.0\Workshop.DataTransferModels.pdb
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\obj\Debug\net9.0\Workshop.DataTransferModels.GeneratedMSBuildEditorConfig.editorconfig
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\obj\Debug\net9.0\Workshop.DataTransferModels.AssemblyInfoInputs.cache
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\obj\Debug\net9.0\Workshop.DataTransferModels.AssemblyInfo.cs
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\obj\Debug\net9.0\Workshop.DataTransferModels.csproj.CoreCompileInputs.cache
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\obj\Debug\net9.0\Workshop.DataTransferModels.sourcelink.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\obj\Debug\net9.0\Workshop.DataTransferModels.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\obj\Debug\net9.0\refint\Workshop.DataTransferModels.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\obj\Debug\net9.0\Workshop.DataTransferModels.pdb
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DataTransferModels\obj\Debug\net9.0\ref\Workshop.DataTransferModels.dll

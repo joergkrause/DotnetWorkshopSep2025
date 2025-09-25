@@ -742,17 +742,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joerg\\.nuget\\packages\\": {},
+    "D:\\Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\CustomerFrontendApp\\CustomerFrontendApp.csproj",
+      "projectUniqueName": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\CustomerFrontendApp\\CustomerFrontendApp.csproj",
       "projectName": "CustomerFrontendApp",
-      "projectPath": "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\CustomerFrontendApp\\CustomerFrontendApp.csproj",
-      "packagesPath": "C:\\Users\\joerg\\.nuget\\packages\\",
-      "outputPath": "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\CustomerFrontendApp\\obj\\",
+      "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\CustomerFrontendApp\\CustomerFrontendApp.csproj",
+      "packagesPath": "D:\\Packages",
+      "outputPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\CustomerFrontendApp\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "fallbackFolders": [
@@ -803,6 +803,9 @@
         "centralPackageVersions": {
           "Grpc.AspNetCore": "2.49.0",
           "Grpc.Core.Testing": "2.46.6",
+          "Mapster": "7.4.0",
+          "Mapster.DependencyInjection": "1.0.1",
+          "Microsoft.AspNetCore.OpenApi": "9.0.9",
           "Microsoft.EntityFrameworkCore": "9.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.9",

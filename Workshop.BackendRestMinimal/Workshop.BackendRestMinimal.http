@@ -1,0 +1,54 @@
+@Workshop.BackendRestMinimal_HostAddress = http://localhost:5248
+
+GET {{Workshop.BackendRestMinimal_HostAddress}}/customer/
+Accept: application/json
+
+###
+
+GET {{Workshop.BackendRestMinimal_HostAddress}}/customer/search?search=Theo
+Accept: application/json
+
+###
+
+
+POST {{Workshop.BackendRestMinimal_HostAddress}}/customer/query
+Accept: application/json
+Content-Type: application/json
+{
+  "field": "name",
+  "op": 1,
+  "value": "Theo"
+}
+
+###
+
+GET {{Workshop.BackendRestMinimal_HostAddress}}/customer/1
+Accept: application/json
+
+###
+
+POST {{Workshop.BackendRestMinimal_HostAddress}}/customer/
+Content-Type: application/json
+{
+  "name": "John",
+  "phone": "123468",
+  "email": "demo@demo.de"
+}
+
+###
+
+PUT {{Workshop.BackendRestMinimal_HostAddress}}/customer/4
+Content-Type: application/json
+{
+  "id": 4,
+  "name": "John",
+  "phone": "123468",
+  "email": "jane@demo.de"
+}
+
+###
+
+DELETE {{Workshop.BackendRestMinimal_HostAddress}}/customer/1
+Accept: application/json
+
+###

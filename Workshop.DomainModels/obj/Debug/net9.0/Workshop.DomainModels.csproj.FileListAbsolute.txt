@@ -9,3 +9,15 @@ X:\Apps\Customers\qh\project\WorkshopProject\Workshop.DomainModels\obj\Debug\net
 X:\Apps\Customers\qh\project\WorkshopProject\Workshop.DomainModels\obj\Debug\net9.0\refint\Workshop.DomainModels.dll
 X:\Apps\Customers\qh\project\WorkshopProject\Workshop.DomainModels\obj\Debug\net9.0\Workshop.DomainModels.pdb
 X:\Apps\Customers\qh\project\WorkshopProject\Workshop.DomainModels\obj\Debug\net9.0\ref\Workshop.DomainModels.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\bin\Debug\net9.0\Workshop.DomainModels.deps.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\bin\Debug\net9.0\Workshop.DomainModels.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\bin\Debug\net9.0\Workshop.DomainModels.pdb
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\obj\Debug\net9.0\Workshop.DomainModels.GeneratedMSBuildEditorConfig.editorconfig
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\obj\Debug\net9.0\Workshop.DomainModels.AssemblyInfoInputs.cache
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\obj\Debug\net9.0\Workshop.DomainModels.AssemblyInfo.cs
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\obj\Debug\net9.0\Workshop.DomainModels.csproj.CoreCompileInputs.cache
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\obj\Debug\net9.0\Workshop.DomainModels.sourcelink.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\obj\Debug\net9.0\Workshop.DomainModels.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\obj\Debug\net9.0\refint\Workshop.DomainModels.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\obj\Debug\net9.0\Workshop.DomainModels.pdb
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.DomainModels\obj\Debug\net9.0\ref\Workshop.DomainModels.dll

@@ -256,6 +256,40 @@
           "build/_._": {}
         }
       },
+      "Mapster/7.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Mapster.Core": "1.2.1"
+        },
+        "compile": {
+          "lib/net7.0/Mapster.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Mapster.dll": {}
+        }
+      },
+      "Mapster.Core/1.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Mapster.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Mapster.Core.dll": {}
+        }
+      },
+      "Mapster.DependencyInjection/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Mapster": "7.4.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Mapster.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Mapster.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.22.0": {
         "type": "package",
         "dependencies": {
@@ -1942,6 +1976,16 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Workshop.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Workshop.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Workshop.DataTransferModels.dll": {}
+        }
+      },
       "Workshop.DomainModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1956,8 +2000,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Mapster": "7.4.0",
+          "Mapster.DependencyInjection": "1.0.1",
           "Microsoft.EntityFrameworkCore": "9.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
+          "Workshop.DataTransferModels": "1.0.0",
           "Workshop.DomainModels": "1.0.0"
         },
         "compile": {
@@ -2325,6 +2372,48 @@
         "tools/windows_x64/protoc.exe",
         "tools/windows_x86/grpc_csharp_plugin.exe",
         "tools/windows_x86/protoc.exe"
+      ]
+    },
+    "Mapster/7.4.0": {
+      "sha512": "RYGoDqvS4WTKIq0HDyPBBVIj6N0mluOCXQ1Vk95JKseMHEsbCXSEGKSlP95oL+s42IXAXbqvHj7p0YaRBUcfqg==",
+      "type": "package",
+      "path": "mapster/7.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0/Mapster.dll",
+        "lib/net7.0/Mapster.dll",
+        "mapster.7.4.0.nupkg.sha512",
+        "mapster.nuspec"
+      ]
+    },
+    "Mapster.Core/1.2.1": {
+      "sha512": "11lokmfliBEMMmjeqxFGNpqGXq6tN96zFqpBmfYeahr4Ybk63oDmeJmOflsATjobYkX248g5Y62oQ2NNnZaeww==",
+      "type": "package",
+      "path": "mapster.core/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0/Mapster.Core.dll",
+        "lib/net7.0/Mapster.Core.dll",
+        "mapster.core.1.2.1.nupkg.sha512",
+        "mapster.core.nuspec"
+      ]
+    },
+    "Mapster.DependencyInjection/1.0.1": {
+      "sha512": "LfjnRIwx6WAo3ssq8PFeaHFaUz00BfSG9BhWgXsiDa3H5lDhG0lpMGDF6w2ZnooS4eHYmAv4f77VxmzpvgorNg==",
+      "type": "package",
+      "path": "mapster.dependencyinjection/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0/Mapster.DependencyInjection.dll",
+        "lib/net7.0/Mapster.DependencyInjection.dll",
+        "mapster.dependencyinjection.1.0.1.nupkg.sha512",
+        "mapster.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.ApplicationInsights/2.22.0": {
@@ -5033,6 +5122,11 @@
       "path": "../Workshop.BackendApi/Workshop.BackendApi.csproj",
       "msbuildProject": "../Workshop.BackendApi/Workshop.BackendApi.csproj"
     },
+    "Workshop.DataTransferModels/1.0.0": {
+      "type": "project",
+      "path": "../Workshop.DataTransferModels/Workshop.DataTransferModels.csproj",
+      "msbuildProject": "../Workshop.DataTransferModels/Workshop.DataTransferModels.csproj"
+    },
     "Workshop.DomainModels/1.0.0": {
       "type": "project",
       "path": "../Workshop.DomainModels/Workshop.DomainModels.csproj",
@@ -5056,17 +5150,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joerg\\.nuget\\packages\\": {},
+    "D:\\Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\Workshop.Backend.Tests\\Workshop.Backend.Tests.csproj",
+      "projectUniqueName": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Backend.Tests\\Workshop.Backend.Tests.csproj",
       "projectName": "Workshop.Backend.Tests",
-      "projectPath": "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\Workshop.Backend.Tests\\Workshop.Backend.Tests.csproj",
-      "packagesPath": "C:\\Users\\joerg\\.nuget\\packages\\",
-      "outputPath": "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\Workshop.Backend.Tests\\obj\\",
+      "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Backend.Tests\\Workshop.Backend.Tests.csproj",
+      "packagesPath": "D:\\Packages",
+      "outputPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Backend.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "fallbackFolders": [
@@ -5089,14 +5183,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\Workshop.BackendApi\\Workshop.BackendApi.csproj": {
-              "projectPath": "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\Workshop.BackendApi\\Workshop.BackendApi.csproj"
+            "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.BackendApi\\Workshop.BackendApi.csproj": {
+              "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.BackendApi\\Workshop.BackendApi.csproj"
             },
-            "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\Workshop.DomainModels\\Workshop.DomainModels.csproj": {
-              "projectPath": "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\Workshop.DomainModels\\Workshop.DomainModels.csproj"
+            "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.DomainModels\\Workshop.DomainModels.csproj": {
+              "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.DomainModels\\Workshop.DomainModels.csproj"
             },
-            "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\Workshop.Persistence\\Workshop.Persistence.csproj": {
-              "projectPath": "X:\\Apps\\Customers\\qh\\project\\WorkshopProject\\Workshop.Persistence\\Workshop.Persistence.csproj"
+            "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Persistence\\Workshop.Persistence.csproj": {
+              "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Persistence\\Workshop.Persistence.csproj"
             }
           }
         }
@@ -5142,6 +5236,9 @@
         "centralPackageVersions": {
           "Grpc.AspNetCore": "2.49.0",
           "Grpc.Core.Testing": "2.46.6",
+          "Mapster": "7.4.0",
+          "Mapster.DependencyInjection": "1.0.1",
+          "Microsoft.AspNetCore.OpenApi": "9.0.9",
           "Microsoft.EntityFrameworkCore": "9.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.9",

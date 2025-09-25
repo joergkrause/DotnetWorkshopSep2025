@@ -1,11 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
+    <ProjectReference Include="..\Workshop.DataTransferModels\Workshop.DataTransferModels.csproj" />
     <ProjectReference Include="..\Workshop.DomainModels\Workshop.DomainModels.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Migrations\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Mapster" />
+    <PackageReference Include="Mapster.DependencyInjection" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
