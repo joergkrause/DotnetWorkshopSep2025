@@ -1,12 +1,24 @@
+using CustomerFrontendApp;
 using CustomerFrontendApp.Components;
+using CustomerFrontendApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var channel = Grpc.Net.Client.GrpcChannel.ForAddress("http://localhost:5214");
-var client = new Workshop.BackendApi.Customer.CustomerClient(channel);
+//var channel = Grpc.Net.Client.GrpcChannel.ForAddress("http://localhost:5214");
+//var client = new Workshop.BackendApi.Customer.CustomerClient(channel);
+//builder.Services.AddSingleton(client);
 
-builder.Services.AddSingleton(client);
+// TODO: MemoryCache
+builder.Services.AddSingleton<ICustomerApiService, CustomerApiService>();
+builder.Services.AddSingleton<MinimalApiBackend>(op =>
+{
+  var httpClient = new HttpClient
+  {
+    BaseAddress = new Uri("https://localhost:7017")     
+  };
+  return new MinimalApiBackend(httpClient);
+});
 
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
@@ -27,7 +39,7 @@ app.UseHttpsRedirection();
 app.UseAntiforgery();
 
 app.MapStaticAssets();
-app.MapRazorComponents<App>()
+app.MapRazorComponents<CustomerFrontendApp.Components.App>()
     .AddInteractiveServerRenderMode();
 
 app.Run();

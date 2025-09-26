@@ -24,6 +24,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/CustomerFrontendApp/Components/Pages/Customers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [X:/Apps/Customers/qh/workshop/DotnetWorkshop/CustomerFrontendApp/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +38,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [X:/Apps/Customers/qh/workshop/DotnetWorkshop/CustomerFrontendApp/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/CustomerFrontendApp/Components/Shared/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcRm9vdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/CustomerFrontendApp/Components/Shared/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcSGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/CustomerFrontendApp/Components/Shared/MainMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcTWFpbk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [X:/Apps/Customers/qh/workshop/DotnetWorkshop/CustomerFrontendApp/Components/_Imports.razor]

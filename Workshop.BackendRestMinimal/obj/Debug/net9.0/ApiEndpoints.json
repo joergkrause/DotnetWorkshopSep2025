@@ -2,6 +2,50 @@
   {
     "ContainingType": "Workshop.BackendRestMinimal.Mappings.MapCustomerEndpointExtension\u002B\u003C\u003Ec",
     "Method": "\u003CMapCustomerEndpoint\u003Eb__0_0",
+    "RelativePath": "api/v{version:apiVersion}/customer/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Workshop.DataTransferModels.CustomerListDto, Workshop.DataTransferModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "v1"
+    ],
+    "EndpointName": "CustomerApi"
+  },
+  {
+    "ContainingType": "Workshop.BackendRestMinimal.Mappings.MapCustomerEndpointExtension\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_2",
+    "RelativePath": "api/v{version:apiVersion}/customer/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Workshop.DataTransferModels.CustomerListDto, Workshop.DataTransferModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "v2"
+    ],
+    "EndpointName": "CustomerApiV2"
+  },
+  {
+    "ContainingType": "Workshop.BackendRestMinimal.Mappings.MapCustomerEndpointExtension\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_3",
     "RelativePath": "customer",
     "HttpMethod": "GET",
     "IsController": false,
@@ -20,7 +64,7 @@
   },
   {
     "ContainingType": "Workshop.BackendRestMinimal.Mappings.MapCustomerEndpointExtension\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_4",
+    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_7",
     "RelativePath": "customer",
     "HttpMethod": "POST",
     "IsController": false,
@@ -52,7 +96,7 @@
   },
   {
     "ContainingType": "Workshop.BackendRestMinimal.Mappings.MapCustomerEndpointExtension\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_3",
+    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_6",
     "RelativePath": "customer/{id:int}",
     "HttpMethod": "GET",
     "IsController": false,
@@ -84,7 +128,7 @@
   },
   {
     "ContainingType": "Workshop.BackendRestMinimal.Mappings.MapCustomerEndpointExtension\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_5",
+    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_8",
     "RelativePath": "customer/{id:int}",
     "HttpMethod": "PUT",
     "IsController": false,
@@ -121,7 +165,7 @@
   },
   {
     "ContainingType": "Workshop.BackendRestMinimal.Mappings.MapCustomerEndpointExtension\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_6",
+    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_9",
     "RelativePath": "customer/{id:int}",
     "HttpMethod": "DELETE",
     "IsController": false,
@@ -151,7 +195,7 @@
   },
   {
     "ContainingType": "Workshop.BackendRestMinimal.Mappings.MapCustomerEndpointExtension\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_2",
+    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_5",
     "RelativePath": "customer/query",
     "HttpMethod": "POST",
     "IsController": false,
@@ -176,7 +220,7 @@
   },
   {
     "ContainingType": "Workshop.BackendRestMinimal.Mappings.MapCustomerEndpointExtension\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_1",
+    "Method": "\u003CMapCustomerEndpoint\u003Eb__0_4",
     "RelativePath": "customer/search",
     "HttpMethod": "GET",
     "IsController": false,

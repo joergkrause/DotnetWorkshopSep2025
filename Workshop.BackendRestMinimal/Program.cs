@@ -1,3 +1,4 @@
+using Asp.Versioning;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Workshop.BackendRestMinimal.Mappings;
@@ -24,6 +25,14 @@ builder.Services.AddScoped<ICustomValidatorService, CustomValidatorService>();
 builder.Services.AddValidatorsFromAssemblyContaining<CustomerAddDtoValidator>();
 builder.Services.AddPersistenceDependencies();
 builder.Services.AddMapsterMappings();
+
+builder.Services.AddApiVersioning(options =>
+{
+  options.DefaultApiVersion = new ApiVersion(1, 0);
+  options.AssumeDefaultVersionWhenUnspecified = true;
+  options.ReportApiVersions = true;
+  options.ApiVersionReader = new UrlSegmentApiVersionReader(); // /api/v1/resource ==> 1, "'v'VVV"
+});
 
 builder.Services.AddOpenApi();
 builder.Services.AddCors(options =>

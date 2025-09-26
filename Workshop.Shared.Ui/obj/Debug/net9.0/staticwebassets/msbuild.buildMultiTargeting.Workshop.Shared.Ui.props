@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Workshop.Shared.Ui.props" />
+</Project>

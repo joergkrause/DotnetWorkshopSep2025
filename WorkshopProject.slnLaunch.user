@@ -3,13 +3,14 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "Workshop.BackendApi\\Workshop.BackendApi.csproj",
+        "Path": "Workshop.BackendRestMinimal\\Workshop.BackendRestMinimal.csproj",
         "Action": "Start",
-        "DebugTarget": "HTTP DemoCase"
+        "DebugTarget": "https"
       },
       {
         "Path": "CustomerFrontendApp\\CustomerFrontendApp.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "https"
       }
     ]
   }

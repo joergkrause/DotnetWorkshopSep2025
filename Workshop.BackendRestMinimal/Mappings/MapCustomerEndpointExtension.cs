@@ -5,6 +5,8 @@ using Workshop.DataTransferModels;
 using Workshop.Persistence.Respositories;
 using System.ComponentModel.DataAnnotations;
 using FluentValidation;
+using Asp.Versioning;
+using Asp.Versioning.Builder;
 
 namespace Workshop.BackendRestMinimal.Mappings;
 
@@ -12,12 +14,37 @@ public static class MapCustomerEndpointExtension
 {
   public static IEndpointRouteBuilder MapCustomerEndpoint(this WebApplication app)
   {
+    var v1 = app.MapGroup("/api/v{version:apiVersion}/customer") // /api/customers?api-version=1.0
+       .WithName("CustomerApi")
+       .WithApiVersionSet(new ApiVersionSetBuilder("v1").HasApiVersion(new ApiVersion(1, 0)).Build())
+       .HasDeprecatedApiVersion(1, 0);
+    var v2 = app.MapGroup("/api/v{version:apiVersion}/customer")
+       .WithName("CustomerApiV2")
+       .WithApiVersionSet(new ApiVersionSetBuilder("v2").HasApiVersion(new ApiVersion(2, 0)).Build())
+       ;
+
+    v1.MapGet("/", async ([FromServices] ICustomerRepository customerRepo) =>
+    {
+      var customers = await customerRepo.GetAllAsync();
+      return Results.Ok(customers);
+    })
+      .Produces<IEnumerable<CustomerListDto>>()
+      .WithOpenApi(op => { op.Deprecated = true; op.Description = "v1 is out of date"; return op; })
+      ;
+    
+    v2.MapGet("/", async ([FromServices] ICustomerRepository customerRepo) =>
+    {
+      var customers = await customerRepo.GetAllAsync();
+      return Results.Ok(customers);
+    })
+      .Produces<IEnumerable<CustomerListDto>>();
+
     app.MapGet("/customer", async ([FromServices] ICustomerRepository customerRepo) =>
     {
       var customers = await customerRepo.GetAllAsync();
       return Results.Ok(customers);
     })
-    .WithName("GetCustomers")
+    .WithName("GetCustomers")    
     .Produces<IEnumerable<CustomerListDto>>();
 
     app.MapGet("/customer/search", async ([FromServices] ICustomerRepository customerRepo, [FromQuery(Name = "search")] string searchName) =>

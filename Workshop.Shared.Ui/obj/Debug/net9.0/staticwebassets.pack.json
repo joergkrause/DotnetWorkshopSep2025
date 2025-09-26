@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Workshop.Shared.Ui.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Workshop.Shared.Ui.kddcecjp4l.bundle.scp.css"
+    },
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\wwwroot\\assets\\dist\\fonts\\boxicons.eot",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\boxicons.eot"
+    },
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\wwwroot\\assets\\dist\\fonts\\boxicons.svg",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\boxicons.svg"
+    },
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\wwwroot\\assets\\dist\\fonts\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\boxicons.ttf"
+    },
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\wwwroot\\assets\\dist\\fonts\\boxicons.woff",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\boxicons.woff"
+    },
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\wwwroot\\assets\\dist\\fonts\\boxicons.woff2",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\boxicons.woff2"
+    },
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\wwwroot\\assets\\dist\\main.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\main.js"
+    },
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\wwwroot\\assets\\dist\\styles.css",
+      "PackagePath": "staticwebassets\\assets\\dist\\styles.css"
+    },
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\wwwroot\\assets\\dist\\styles.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\styles.js"
+    },
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Workshop.Shared.Ui.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Workshop.Shared.Ui.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Workshop.Shared.Ui.props",
+      "PackagePath": "build\\Workshop.Shared.Ui.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Workshop.Shared.Ui.props",
+      "PackagePath": "buildMultiTargeting\\Workshop.Shared.Ui.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Workshop.Shared.Ui.props",
+      "PackagePath": "buildTransitive\\Workshop.Shared.Ui.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

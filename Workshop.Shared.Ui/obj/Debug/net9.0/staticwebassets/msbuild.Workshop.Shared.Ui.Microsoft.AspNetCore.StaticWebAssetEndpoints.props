@@ -1,0 +1,136 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.62r57iwrna.eot">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\fonts\boxicons.eot'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"62r57iwrna"},{"Name":"integrity","Value":"sha256-wjiHuxxxxmWZ\u002BExq2pQIphn4u84lQbbHQSnCrjpQ4fc="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.eot"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"405670"},{"Name":"Content-Type","Value":"application/vnd.ms-fontobject"},{"Name":"ETag","Value":"\u0022wjiHuxxxxmWZ\u002BExq2pQIphn4u84lQbbHQSnCrjpQ4fc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.d155qmw4en.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\fonts\boxicons.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"d155qmw4en"},{"Name":"integrity","Value":"sha256-P\u002BUC2Mj2oLuG/CWOFqpuyVpoTuUNaTvU/jBbRn/ScLs="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1242122"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022P\u002BUC2Mj2oLuG/CWOFqpuyVpoTuUNaTvU/jBbRn/ScLs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.eot">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\fonts\boxicons.eot'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wjiHuxxxxmWZ\u002BExq2pQIphn4u84lQbbHQSnCrjpQ4fc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"405670"},{"Name":"Content-Type","Value":"application/vnd.ms-fontobject"},{"Name":"ETag","Value":"\u0022wjiHuxxxxmWZ\u002BExq2pQIphn4u84lQbbHQSnCrjpQ4fc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.l8cfdgiw3e.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\fonts\boxicons.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"l8cfdgiw3e"},{"Name":"integrity","Value":"sha256-S4fLx08/\u002BvCDFKXYG1Ab5vw29VPb5EbvWksp8BOLoLA="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"115680"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022S4fLx08/\u002BvCDFKXYG1Ab5vw29VPb5EbvWksp8BOLoLA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.ndw186f8wf.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\fonts\boxicons.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ndw186f8wf"},{"Name":"integrity","Value":"sha256-1dURz5YHK8fV2zf5LDW1MGrVy1ujf0Vqv7CP\u002BnfxYoY="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"321020"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u00221dURz5YHK8fV2zf5LDW1MGrVy1ujf0Vqv7CP\u002BnfxYoY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\fonts\boxicons.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-P\u002BUC2Mj2oLuG/CWOFqpuyVpoTuUNaTvU/jBbRn/ScLs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1242122"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022P\u002BUC2Mj2oLuG/CWOFqpuyVpoTuUNaTvU/jBbRn/ScLs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.ttf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\fonts\boxicons.ttf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-R1CaLdebAZsLkU7tC6QSB0gSSIlGejClHwlcettB3AY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"320944"},{"Name":"Content-Type","Value":"application/x-font-ttf"},{"Name":"ETag","Value":"\u0022R1CaLdebAZsLkU7tC6QSB0gSSIlGejClHwlcettB3AY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\fonts\boxicons.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1dURz5YHK8fV2zf5LDW1MGrVy1ujf0Vqv7CP\u002BnfxYoY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"321020"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u00221dURz5YHK8fV2zf5LDW1MGrVy1ujf0Vqv7CP\u002BnfxYoY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\fonts\boxicons.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-S4fLx08/\u002BvCDFKXYG1Ab5vw29VPb5EbvWksp8BOLoLA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"115680"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022S4fLx08/\u002BvCDFKXYG1Ab5vw29VPb5EbvWksp8BOLoLA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.zpm9dex1i8.ttf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\fonts\boxicons.ttf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zpm9dex1i8"},{"Name":"integrity","Value":"sha256-R1CaLdebAZsLkU7tC6QSB0gSSIlGejClHwlcettB3AY="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/assets/dist/fonts/boxicons.ttf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"320944"},{"Name":"Content-Type","Value":"application/x-font-ttf"},{"Name":"ETag","Value":"\u0022R1CaLdebAZsLkU7tC6QSB0gSSIlGejClHwlcettB3AY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/main.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\main.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ekaCy8iPK5zVZR9STW42QusSpPJLUzeU7xECdZs71aU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"50"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ekaCy8iPK5zVZR9STW42QusSpPJLUzeU7xECdZs71aU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/main.qbuo6d3f9v.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\main.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qbuo6d3f9v"},{"Name":"integrity","Value":"sha256-ekaCy8iPK5zVZR9STW42QusSpPJLUzeU7xECdZs71aU="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/assets/dist/main.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"50"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ekaCy8iPK5zVZR9STW42QusSpPJLUzeU7xECdZs71aU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/styles.5ipweew5fc.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\styles.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5ipweew5fc"},{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/assets/dist/styles.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/styles.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\styles.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gtSjk\u002BMPAAlayzxIpugkAAdWkj2ISYwT\u002BJrVSGCO6OM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"290718"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gtSjk\u002BMPAAlayzxIpugkAAdWkj2ISYwT\u002BJrVSGCO6OM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/styles.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\styles.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/assets/dist/styles.u9i47esebg.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\styles.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u9i47esebg"},{"Name":"integrity","Value":"sha256-gtSjk\u002BMPAAlayzxIpugkAAdWkj2ISYwT\u002BJrVSGCO6OM="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/assets/dist/styles.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"290718"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gtSjk\u002BMPAAlayzxIpugkAAdWkj2ISYwT\u002BJrVSGCO6OM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:52:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/background.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"378"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:21:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/background.x2rx4ajns0.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x2rx4ajns0"},{"Name":"integrity","Value":"sha256-WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/background.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"378"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:21:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/exampleJsInterop.6pqz8bsss0.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\exampleJsInterop.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6pqz8bsss0"},{"Name":"integrity","Value":"sha256-FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/exampleJsInterop.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"247"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:21:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/exampleJsInterop.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\exampleJsInterop.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"247"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FrrTtczTUEHjkhc/zWRPC7CmxeXI0JCZGc1\u002B76qQ8B4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:21:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/Workshop.Shared.Ui.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Workshop.Shared.Ui.kddcecjp4l.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uLw51lzEgC4fyzDjBq7l9MXemC6FBK5wrPIqQWFcrV8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"211"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022uLw51lzEgC4fyzDjBq7l9MXemC6FBK5wrPIqQWFcrV8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:57:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Workshop.Shared.Ui/Workshop.Shared.Ui.kddcecjp4l.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Workshop.Shared.Ui.kddcecjp4l.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kddcecjp4l"},{"Name":"integrity","Value":"sha256-uLw51lzEgC4fyzDjBq7l9MXemC6FBK5wrPIqQWFcrV8="},{"Name":"label","Value":"_content/Workshop.Shared.Ui/Workshop.Shared.Ui.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"211"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022uLw51lzEgC4fyzDjBq7l9MXemC6FBK5wrPIqQWFcrV8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 11:57:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

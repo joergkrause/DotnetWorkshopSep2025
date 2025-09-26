@@ -91,3 +91,5 @@ X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRestMinimal\bin\Deb
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRestMinimal\bin\Debug\net9.0\Mapster.DependencyInjection.dll
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRestMinimal\bin\Debug\net9.0\FluentValidation.dll
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRestMinimal\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRestMinimal\bin\Debug\net9.0\Asp.Versioning.Abstractions.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRestMinimal\bin\Debug\net9.0\Asp.Versioning.Http.dll

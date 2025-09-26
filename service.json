@@ -261,6 +261,29 @@
           }
         }
       }
+    },
+    "/api/v{version}/customer": {
+      "get": {
+        "tags": [
+          "v2"
+        ],
+        "operationId": "CustomerApiV2",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CustomerListDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -381,6 +404,12 @@
   "tags": [
     {
       "name": "Workshop.BackendRestMinimal"
+    },
+    {
+      "name": "v1"
+    },
+    {
+      "name": "v2"
     }
   ]
 }
