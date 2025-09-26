@@ -1,5 +1,50 @@
-﻿<h3>EditCustomer</h3>
+﻿@using Workshop.Shared.Ui.Forms
+@inject ICustomerApiService CustomerApiService
+
+<h3>EditCustomer</h3>
+@if (customer is CustomerEditViewModel editViewModel)
+{
+  <InputElement ModelType="CustomerEditViewModel" Name="Name" @bind-Value="editViewModel.Name"></InputElement>
+  <button class="btn btn-primary" @onclick="SaveCustomer">Save</button>
+}
+else
+{
+  <p>Loading...</p>
+}
+
 
 @code {
+
+  private CustomerEditViewModel? customer;
+
+  [Parameter, EditorRequired]
+  public int CustomerId { get; set; }
+
+  [Parameter]
+  public EventCallback<CustomerEditViewModel> OnCustomerSaved { get; set; }
+
+  // protected override async Task OnInitializedAsync()
+  // {
+  //   // if (CustomerId != 0)
+  //   // {
+  //   //   customer = await CustomerApiService.GetCustomerById(CustomerId);
+  //   // }    
+  // }
+
+  protected override async Task OnParametersSetAsync()
+  {
+    if (CustomerId != 0)
+    {
+      customer = await CustomerApiService.GetCustomerById(CustomerId);
+    }
+  }
+
+  private async Task SaveCustomer()
+  {
+    if (customer != null && OnCustomerSaved.HasDelegate)
+    {
+      await OnCustomerSaved.InvokeAsync(customer);
+    }
+  }
 
 }

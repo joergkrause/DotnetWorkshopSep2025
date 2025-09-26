@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nX85fbeK96I=",
+  "dgSpecHash": "fD0q9ZMQcCQ=",
   "success": true,
   "projectFilePath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.UseCases\\Workshop.UseCases.csproj",
   "expectedPackageFiles": [
+    "D:\\Packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
+    "D:\\Packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
+    "D:\\Packages\\mapster.dependencyinjection\\1.0.1\\mapster.dependencyinjection.1.0.1.nupkg.sha512",
     "D:\\Packages\\microsoft.aspnetcore.authorization\\9.0.9\\microsoft.aspnetcore.authorization.9.0.9.nupkg.sha512",
     "D:\\Packages\\microsoft.aspnetcore.components\\9.0.9\\microsoft.aspnetcore.components.9.0.9.nupkg.sha512",
     "D:\\Packages\\microsoft.aspnetcore.components.analyzers\\9.0.9\\microsoft.aspnetcore.components.analyzers.9.0.9.nupkg.sha512",

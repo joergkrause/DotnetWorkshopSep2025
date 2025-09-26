@@ -1,5 +1,6 @@
 using CustomerFrontendApp;
 using Workshop.UseCases;
+using Workshop.UseCases.Mappings;
 using Workshop.UseCases.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,15 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddSingleton(client);
 
 // TODO: MemoryCache
-builder.Services.AddSingleton<ICustomerApiService, CustomerApiService>();
-builder.Services.AddSingleton<MinimalApiBackend>(op =>
-{
-  var httpClient = new HttpClient
-  {
-    BaseAddress = new Uri("https://localhost:7017")     
-  };
-  return new MinimalApiBackend(httpClient);
-});
+builder.Services.AddMapsterMappings();
+builder.Services.AddServiceDependencies();
 
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();

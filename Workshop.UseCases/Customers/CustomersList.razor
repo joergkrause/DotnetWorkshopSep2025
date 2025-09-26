@@ -11,20 +11,49 @@
   <tbody>
     @foreach (var customer in customers)
     {
-      <tr>
+      <tr @key="customer.Id">
         <td>@customer.Id</td>
         <td>@customer.Name</td>
-        <td></td>
+        <td>
+             <button type="button" class="btn btn-primary" @onclick="@(() => EditCustomer(customer.Id))">Edit</button>
+        </td>
       </tr>
     }
   </tbody>
 </table>
 
+@if (selectedCustomerId != 0)
+{
+  <EditCustomer CustomerId="@selectedCustomerId" OnCustomerSaved="@OnCustomerSaved" />
+}
+
 @code {
-  private IList<CustomerListDto> customers = new List<CustomerListDto>();
+  
+  private IList<CustomerListViewModel> customers = new List<CustomerListViewModel>();
+  private int selectedCustomerId;
 
   protected override async Task OnInitializedAsync()
   {
     customers = await CustomerApiService.GetAllCustomers();
+  }
+
+  private void EditCustomer(int customerId)
+  {
+    selectedCustomerId = customerId;
+  }
+
+  private Task OnCustomerSaved(CustomerEditViewModel updatedCustomer)
+  {
+    // Update the customer in the list
+    var customer = customers.FirstOrDefault(c => c.Id == updatedCustomer.Id);
+    if (customer != null)
+    {
+      customer.Name = updatedCustomer.Name;
+    }
+    // Clear the selected customer to hide the edit form
+    selectedCustomerId = 0;
+    // Optionally, you could refresh the entire list from the server
+    // customers = await CustomerApiService.GetAllCustomers();
+    return Task.CompletedTask;
   }
 }

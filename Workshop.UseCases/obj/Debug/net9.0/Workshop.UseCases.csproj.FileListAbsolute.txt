@@ -29,3 +29,12 @@ X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\obj\Debug\net9.0\
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\obj\Debug\net9.0\Workshop.UseCases.pdb
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\obj\Debug\net9.0\ref\Workshop.UseCases.dll
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\bin\Debug\net9.0\Properties\launchSettings.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\bin\Debug\net9.0\package-lock.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\bin\Debug\net9.0\package.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\bin\Debug\net9.0\Workshop.Shared.Ui.staticwebassets.runtime.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\bin\Debug\net9.0\Workshop.Shared.Ui.staticwebassets.endpoints.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\bin\Debug\net9.0\Workshop.UseCases.staticwebassets.runtime.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\bin\Debug\net9.0\Workshop.Shared.Ui.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\bin\Debug\net9.0\Workshop.Shared.Ui.pdb
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\obj\Debug\net9.0\compressed\3mgimuc506-cdjjswfbru.gz
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.UseCases\obj\Debug\net9.0\Workshop.44A1EF00.Up2Date

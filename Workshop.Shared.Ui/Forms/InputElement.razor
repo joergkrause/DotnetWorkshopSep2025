@@ -1,0 +1,38 @@
+﻿@typeparam ModelType
+
+<div class="mb-3">
+  <label for="@labelName" class="form-label">@Label</label>
+  <input type="text" class="form-control" id="@labelName" @bind-value="Value">
+</div>
+
+@code {
+
+  private string labelName => $"_label_{Name}";
+
+  [Parameter]
+  public string Value { get; set; } = string.Empty;
+
+  [Parameter]
+  public EventCallback<string> ValueChanged { get; set; }
+
+  [Parameter]
+  public string? Label { get; set; }
+
+  [Parameter, EditorRequired]
+  public string Name { get; set; }
+
+  private async Task OnValueChanged(ChangeEventArgs e)
+  {
+    Value = e.Value?.ToString() ?? string.Empty;
+    await ValueChanged.InvokeAsync(Value);
+  }
+
+  protected override void OnInitialized()
+  {
+     var displayAttribute = typeof(ModelType).GetProperty(Name)?
+        .GetCustomAttributes(typeof(System.ComponentModel.DataAnnotations.DisplayAttribute), false)
+        .FirstOrDefault() as System.ComponentModel.DataAnnotations.DisplayAttribute;
+     Label ??= displayAttribute?.Name ?? Name;
+  }
+
+}

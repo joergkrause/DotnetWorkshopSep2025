@@ -252,7 +252,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\Workshop.Shared.Ui.csproj": {
+                "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\Workshop.Shared.Ui.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -272,6 +276,16 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Mapster.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )",
+              "versionCentrallyManaged": true
+            },
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[9.0.9, )",

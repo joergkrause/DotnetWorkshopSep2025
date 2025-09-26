@@ -9,12 +9,16 @@
   <link rel="stylesheet" href="@Assets["CustomerFrontendApp.styles.css"]" />
   <link rel="stylesheet" href="/_content/Workshop.Shared.Ui/assets/dist/styles.css" />
   <ImportMap />
-  <HeadOutlet />
+  <HeadOutlet @rendermode="@interactiveServer"/>
 </head>
 
 <body>
-  <Routes />
+  <Routes @rendermode="@interactiveServer" />
   <script src="_framework/blazor.web.js"></script>
 </body>
 
 </html>
+
+@code {
+  InteractiveServerRenderMode interactiveServer = new InteractiveServerRenderMode(false);
+}
