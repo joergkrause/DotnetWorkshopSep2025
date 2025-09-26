@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <OpenApiReference Include="..\service.json" ClassName="MinimalApiBackend" Link="OpenAPIs\service.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" />
     <PackageReference Include="Microsoft.Extensions.ApiDescription.Client">
       <PrivateAssets>all</PrivateAssets>
@@ -25,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Workshop.Shared.Ui\Workshop.Shared.Ui.csproj" />
+    <ProjectReference Include="..\Workshop.UseCases\Workshop.UseCases.csproj" />
   </ItemGroup>
 
   <ItemGroup>

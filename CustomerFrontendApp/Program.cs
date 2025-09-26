@@ -1,6 +1,6 @@
 using CustomerFrontendApp;
-using CustomerFrontendApp.Components;
-using CustomerFrontendApp.Services;
+using Workshop.UseCases;
+using Workshop.UseCases.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

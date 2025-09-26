@@ -12,7 +12,8 @@
           "Microsoft.Extensions.ApiDescription.Client": "7.0.2",
           "NSwag.ApiDescription.Client": "13.18.2",
           "Newtonsoft.Json": "13.0.1",
-          "Workshop.Shared.Ui": "1.0.0"
+          "Workshop.Shared.Ui": "1.0.0",
+          "Workshop.UseCases": "1.0.0"
         },
         "runtime": {
           "CustomerFrontendApp.dll": {}
@@ -278,6 +279,18 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Workshop.UseCases/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "9.0.9",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "Workshop.UseCases.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -505,6 +518,11 @@
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
     "Workshop.Shared.Ui/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Workshop.UseCases/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

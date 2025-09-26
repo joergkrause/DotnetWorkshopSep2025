@@ -217,7 +217,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>211</FileLength>
-      <LastWriteTime>Fri, 26 Sep 2025 11:57:05 GMT</LastWriteTime>
+      <LastWriteTime>Fri, 26 Sep 2025 12:06:49 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Workshop.Shared.Ui.kddcecjp4l.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>

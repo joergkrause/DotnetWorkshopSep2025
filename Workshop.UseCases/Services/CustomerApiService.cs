@@ -1,4 +1,5 @@
-﻿namespace CustomerFrontendApp.Services;
+﻿
+namespace Workshop.UseCases.Services;
 
 public class CustomerApiService(MinimalApiBackend backend) : ICustomerApiService
 {

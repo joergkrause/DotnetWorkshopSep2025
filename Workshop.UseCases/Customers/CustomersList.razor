@@ -1,0 +1,30 @@
+﻿@inject ICustomerApiService CustomerApiService
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var customer in customers)
+    {
+      <tr>
+        <td>@customer.Id</td>
+        <td>@customer.Name</td>
+        <td></td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+@code {
+  private IList<CustomerListDto> customers = new List<CustomerListDto>();
+
+  protected override async Task OnInitializedAsync()
+  {
+    customers = await CustomerApiService.GetAllCustomers();
+  }
+}

@@ -1,38 +1,14 @@
 ﻿@page "/Customers"
 
-@inject ICustomerApiService CustomerApiService
-
 <PageTitle>Customers</PageTitle>
 
 <h3>Customers</h3>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Name</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    @foreach (var customer in customers)
-    {
-      <tr>
-        <td>@customer.Id</td>
-        <td>@customer.Name</td>
-        <td></td>
-      </tr>
-    }
-  </tbody>
-</table>
+<CustomersList></CustomersList>
+
 
 @code {
 
-  private IList<CustomerListDto> customers = new List<CustomerListDto>();
 
-  protected override async Task OnInitializedAsync()
-  {
-    customers = await CustomerApiService.GetAllCustomers();
-  }
 
 }

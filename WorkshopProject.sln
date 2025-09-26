@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.DataTransferModels
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.Shared.Ui", "Workshop.Shared.Ui\Workshop.Shared.Ui.csproj", "{137644A9-4A5B-4405-88D8-973726499C70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.UseCases", "Workshop.UseCases\Workshop.UseCases.csproj", "{C1AECEEF-C9E6-4016-A403-7DECF32AE297}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{137644A9-4A5B-4405-88D8-973726499C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{137644A9-4A5B-4405-88D8-973726499C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{137644A9-4A5B-4405-88D8-973726499C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1AECEEF-C9E6-4016-A403-7DECF32AE297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1AECEEF-C9E6-4016-A403-7DECF32AE297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1AECEEF-C9E6-4016-A403-7DECF32AE297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1AECEEF-C9E6-4016-A403-7DECF32AE297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{5BB59FE8-44F6-4EA7-915D-90B0A19E0E72} = {C923163A-9E58-49E1-A8CA-DB1AC2A255E4}
 		{0C7C379A-563A-4A94-985F-1ECFA8E07B28} = {C923163A-9E58-49E1-A8CA-DB1AC2A255E4}
 		{137644A9-4A5B-4405-88D8-973726499C70} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C1AECEEF-C9E6-4016-A403-7DECF32AE297} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C38DDB6-A68A-4EC5-BA80-1CE8B4B25B54}

@@ -1,5 +1,6 @@
-﻿
-<Router AppAssembly="typeof(Program).Assembly">
+﻿@using Workshop.UseCases.Customers
+
+<Router AppAssembly="typeof(Program).Assembly" AdditionalAssemblies="[typeof(CustomersList).Assembly]">
     <Found Context="routeData">
         <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
         <FocusOnNavigate RouteData="routeData" Selector="h1" />

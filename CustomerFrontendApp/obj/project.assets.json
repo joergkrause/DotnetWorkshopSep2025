@@ -484,6 +484,20 @@
         "runtime": {
           "bin/placeholder/Workshop.Shared.Ui.dll": {}
         }
+      },
+      "Workshop.UseCases/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "9.0.9",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Workshop.UseCases.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Workshop.UseCases.dll": {}
+        }
       }
     }
   },
@@ -1824,6 +1838,11 @@
       "type": "project",
       "path": "../Workshop.Shared.Ui/Workshop.Shared.Ui.csproj",
       "msbuildProject": "../Workshop.Shared.Ui/Workshop.Shared.Ui.csproj"
+    },
+    "Workshop.UseCases/1.0.0": {
+      "type": "project",
+      "path": "../Workshop.UseCases/Workshop.UseCases.csproj",
+      "msbuildProject": "../Workshop.UseCases/Workshop.UseCases.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1832,7 +1851,8 @@
       "Microsoft.Extensions.ApiDescription.Client >= 7.0.2",
       "NSwag.ApiDescription.Client >= 13.18.2",
       "Newtonsoft.Json >= 13.0.1",
-      "Workshop.Shared.Ui >= 1.0.0"
+      "Workshop.Shared.Ui >= 1.0.0",
+      "Workshop.UseCases >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1871,6 +1891,9 @@
           "projectReferences": {
             "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\Workshop.Shared.Ui.csproj": {
               "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\Workshop.Shared.Ui.csproj"
+            },
+            "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.UseCases\\Workshop.UseCases.csproj": {
+              "projectPath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.UseCases\\Workshop.UseCases.csproj"
             }
           }
         }

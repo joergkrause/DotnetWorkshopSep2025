@@ -16,7 +16,8 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="npm i" />
+    <Exec Command="npm install" />
+    <Exec Command="npm run pack" />
   </Target>
 
 </Project>
