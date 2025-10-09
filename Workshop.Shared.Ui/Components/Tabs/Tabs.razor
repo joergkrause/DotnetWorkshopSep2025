@@ -4,31 +4,30 @@
 
 <div class="tabs-container">
   <ul class="nav nav-tabs">
-    @for (int i = 0; i < _tabItems.Count; i++)
+    @foreach (var tab in _tabItems)
     {
-      var index = i;
+      var name = tab.Key;
       <li class="nav-item" role="presentation">
-        <button class="nav-link @(i == ActiveTabIndex ? "active" : "")"
-                id="tab-@i"
+        <button class="nav-link @(name == ActiveTabName ? "active" : "")"
+                id="tab-@name"
                 role="tab"
-                aria-controls="panel-@i"
-                aria-selected="@(i == ActiveTabIndex ? "true" : "false")"
-                @onclick="() => SetActiveTab(index)">
-          @(_tabItems[i])
+                aria-controls="panel-@name"
+                aria-selected="@(name == ActiveTabName ? "true" : "false")"
+                @onclick="() => SetActiveTab(name)">
+          @(_tabItems[name])
         </button>
       </li>
     }
   </ul>
   <div class="tab-content mt-3">
-    @for (int i = 0; i < _tabPanels.Count; i++)
+    @foreach (var panel in _tabPanels)
     {
-      var index = i;
-      <div class="tab-pane @(i == ActiveTabIndex ? "active show" : "")"
-           id="panel-@i"
+      var name = panel.Key;
+      <div class="tab-pane @(name == ActiveTabName ? "active show" : "d-none")"
+           id="panel-@name"
            role="tabpanel"
-           aria-labelledby="tab-@i"
-           style="@(i == ActiveTabIndex ? "" : "display: none;")">
-        @(_tabPanels[i])
+           aria-labelledby="tab-@name">
+        @(_tabPanels[name])
       </div>
     }
   </div>
@@ -37,13 +36,16 @@
 @code {
 
   [Parameter]
-  public int ActiveTabIndex { get; set; }
+  public string? ActiveTabName { get; set; }
 
   [Parameter]
   public RenderFragment? ChildContent { get; set; }
 
-  private readonly List<RenderFragment> _tabItems = new();
-  private readonly List<RenderFragment> _tabPanels = new();
+  [Parameter]
+  public EventCallback<string> OnActiveTab { get; set; }
+
+  private readonly Dictionary<string, RenderFragment> _tabItems = new();
+  private readonly Dictionary<string, RenderFragment> _tabPanels = new();
   private bool _hasRendered = false;
 
   protected override void OnAfterRender(bool firstRender)
@@ -55,18 +57,18 @@
     }
   }
 
-  public void AddTab(RenderFragment tab)
+  public void AddTab(string name, RenderFragment tab)
   {
-    _tabItems.Add(tab);
+    _tabItems.Add(name, tab);
     if (_hasRendered)
     {
       StateHasChanged();
     }
   }
 
-  public void AddPanel(RenderFragment panel)
+  public void AddPanel(string name, RenderFragment panel)
   {
-    _tabPanels.Add(panel);
+    _tabPanels.Add(name, panel);
     if (_hasRendered)
     {
       StateHasChanged();
@@ -79,9 +81,13 @@
     _tabPanels.Clear();
   }
 
-  private void SetActiveTab(int index)
+  private async void SetActiveTab(string name)
   {
-    ActiveTabIndex = index;
+    ActiveTabName = name;
+    if (OnActiveTab.HasDelegate)
+    {
+      await OnActiveTab.InvokeAsync(name);
+    }
     StateHasChanged();
   }
 

@@ -3,7 +3,7 @@
 
 <PageTitle>Customers</PageTitle>
 
-<h3>Customers</h3>
+<h3>@tabName</h3>
 
 @* <Tabs>
   <TabPage Title="Customers List">
@@ -17,33 +17,36 @@
   </TabPage>
 </Tabs> *@
 
-<Tabs>
+<Tabs OnActiveTab="OnActiveTab">
   <Items>
-    <Item>Customers List</Item>    
-    <Item>Add New Customer</Item>
-    <Item>Customer Reports</Item>
+    <Item Name="list">Customers List</Item>    
+    <Item Name="reports">Customer Reports</Item>
+    <Item Name="add">Add New Customer</Item>    
   </Items>
   <Panels>
-    <Panel>
+    <Panel Name="list">
       <h4>Customers List</h4>
-      <p>View and manage your customers.</p>
+      <CustomersList></CustomersList>
     </Panel>
-    <Panel>
+    <Panel Name="add">
       <h4>Add New Customer</h4>
       <p>Create a new customer profile.</p>
     </Panel>
-    <Panel>
+    <Panel Name="reports">
       <h4>Customer Reports</h4>
       <p>Generate and view customer reports.</p>
     </Panel>
   </Panels>
 </Tabs>
 
-<CustomersList></CustomersList>
-
 
 @code {
 
+  private string? tabName;
 
+  private void OnActiveTab(string name)
+  {
+    tabName = name;
+  }
 
 }

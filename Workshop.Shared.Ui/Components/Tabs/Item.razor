@@ -1,5 +1,8 @@
 ﻿@code {
 
+  [Parameter, EditorRequired]
+  public string Name { get; set; }
+
   [Parameter]
   public RenderFragment? ChildContent { get; set; }
 
@@ -10,7 +13,7 @@
   {
     if (Parent != null && ChildContent != null)
     {
-      Parent?.AddTab(ChildContent);
+      Parent?.AddTab(Name, ChildContent);
     }
   }
 

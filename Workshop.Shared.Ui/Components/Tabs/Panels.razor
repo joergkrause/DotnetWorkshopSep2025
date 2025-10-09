@@ -10,6 +10,6 @@
   [CascadingParameter]
   public Tabs? Parent { get; set; }
 
-  public void AddPanel(RenderFragment panel) => Parent?.AddPanel(panel);
+  public void AddPanel(string name, RenderFragment panel) => Parent?.AddPanel(name, panel);
 
 }
