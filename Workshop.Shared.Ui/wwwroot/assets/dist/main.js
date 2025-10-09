@@ -1,1 +1,1 @@
-windows.blazorHelper={focusElement:function(e){}};
+window.blazorHelpers={focusElement:function(e){},initializeDropdown:function(e,n,o){const t=document.getElementById(e),c=document.getElementById(n);t&&c&&(document.addEventListener("click",function(e){t.contains(e.target)||c.contains(e.target)||o.invokeMethodAsync("CloseDropdown")}),document.addEventListener("keydown",function(e){"Escape"===e.key&&o.invokeMethodAsync("CloseDropdown")}))},cleanUpDropdown:function(){document.removeEventListener("click"),document.removeEventListener("keydown")}};

@@ -1,0 +1,18 @@
+﻿@typeparam ItemType
+
+@if (Items.Any() && ChildContent is not null) {
+  @foreach(var item in Items)
+  {
+    @ChildContent(item)
+  }
+}
+
+@code {
+
+  [Parameter, EditorRequired]
+  public IEnumerable<ItemType> Items { get; set; } = [];
+
+  [Parameter]
+  public RenderFragment<ItemType>? ChildContent { get; set; }
+
+}

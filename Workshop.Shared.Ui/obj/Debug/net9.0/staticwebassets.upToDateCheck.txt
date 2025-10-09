@@ -8,8 +8,8 @@ wwwroot\assets\dist\styles.css
 wwwroot\assets\dist\styles.js
 wwwroot\background.png
 wwwroot\exampleJsInterop.js
-X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\wwwroot\assets\dist\fonts\boxicons.svg
-X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\wwwroot\assets\dist\main.js
-X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\wwwroot\assets\dist\styles.css
-X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\wwwroot\assets\dist\styles.js
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\wwwroot\exampleJsInterop.js
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\wwwroot\assets\dist\styles.js
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\wwwroot\assets\dist\styles.css
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\wwwroot\assets\dist\main.js
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\wwwroot\assets\dist\fonts\boxicons.svg

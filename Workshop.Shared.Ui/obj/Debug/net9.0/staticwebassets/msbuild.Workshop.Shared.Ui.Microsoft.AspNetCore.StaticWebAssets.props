@@ -112,12 +112,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qbuo6d3f9v</Fingerprint>
-      <Integrity>ekaCy8iPK5zVZR9STW42QusSpPJLUzeU7xECdZs71aU=</Integrity>
+      <Fingerprint>jsmgxemk3m</Fingerprint>
+      <Integrity>Y/CxScbdETlcTzyIQ9BeeHrPxkRw0adW72w+/3CXliQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>50</FileLength>
-      <LastWriteTime>Fri, 26 Sep 2025 11:52:28 GMT</LastWriteTime>
+      <FileLength>498</FileLength>
+      <LastWriteTime>Thu, 09 Oct 2025 12:21:31 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\main.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\dist\styles.css'))">
@@ -217,7 +217,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>211</FileLength>
-      <LastWriteTime>Fri, 26 Sep 2025 12:06:49 GMT</LastWriteTime>
+      <LastWriteTime>Thu, 09 Oct 2025 12:21:35 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Workshop.Shared.Ui.kddcecjp4l.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>

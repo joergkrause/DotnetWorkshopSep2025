@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Workshop.Shared.Ui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf59f23dc4c360da4a61982280b6dffd21f86ccb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+814ce9465e09ae72f458bdaec817bc99d65f611f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Workshop.Shared.Ui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Workshop.Shared.Ui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/Workshop.Shared.Ui/Components/Conditions/Condition.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb25kaXRpb25zXENvbmRpdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/Workshop.Shared.Ui/Components/Repeaters/Repeater.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZXBlYXRlcnNcUmVwZWF0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [X:/Apps/Customers/qh/workshop/DotnetWorkshop/Workshop.Shared.Ui/Components/Tabs/Item.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJzXEl0ZW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

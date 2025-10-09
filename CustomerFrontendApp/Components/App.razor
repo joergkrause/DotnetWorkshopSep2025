@@ -9,12 +9,44 @@
   <link rel="stylesheet" href="@Assets["CustomerFrontendApp.styles.css"]" />
   <link rel="stylesheet" href="/_content/Workshop.Shared.Ui/assets/dist/styles.css" />
   <ImportMap />
-  <HeadOutlet @rendermode="@interactiveServer"/>
+  <HeadOutlet @rendermode="@interactiveServer" />
 </head>
 
 <body>
   <Routes @rendermode="@interactiveServer" />
   <script src="_framework/blazor.web.js"></script>
+  <script src="/_content/Workshop.Shared.Ui/assets/dist/main.js"></script>
+  @* <script>
+    // v1
+    function blazorHelpers() {
+      return {
+        initializeDropDown: function() {
+
+        }
+      }
+    }
+    // v2
+    window.blazorHelpers = {
+      initializeDropDown: function() {
+        
+      }
+    };
+    // v2.1
+    window.blazorHelpers = {
+      initializeDropDown: () => {
+        
+      }
+    };
+    // v3
+    function() {
+      window.blazorHelpers = {
+        initializeDropDown: function() {
+
+        }
+      }
+    }();
+
+  </script> *@
 </body>
 
 </html>

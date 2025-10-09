@@ -1,11 +1,74 @@
 ﻿@page "/"
+@using Workshop.Shared.Ui.Components.Conditions
+
+@implements IAsyncDisposable
+
+@inject IJSRuntime JSRuntime
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="@DropDownBtnId" aria-expanded="false" @onclick="ToggleDropDown">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu @DropStyle" id="@DropDownMenuId" aria-labelledby="@DropDownBtnId">
+    <li><a class="dropdown-item" href="#" @onclick="@(() => SelectOption(typeof(CustomersList)))">List</a></li>
+    <li><a class="dropdown-item" href="#" @onclick="@(() => SelectOption(typeof(NewCustomer)))">New</a></li>
+  </ul>
+</div>
 
-Welcome to your new app.  
+<Condition Check="customerFormType != null">
+  <If>
+    <DynamicComponent Type="customerFormType"></DynamicComponent>
+  </If>
+  <Else>
+    <p>Please select a form from the dropdown above.</p>
+  </Else>
+</Condition>
+
 
 @code {
+
+  private bool isDropDownOpen;
+  private Type? customerFormType;
+  private string DropDownBtnId = $"_{Guid.NewGuid()}";
+  private string DropDownMenuId = $"_{Guid.NewGuid()}";
+  private DotNetObjectReference<Home>? objRef;
+  private string DropStyle => isDropDownOpen ? "show" : "";
+
+  protected override async Task OnAfterRenderAsync(bool firstRender)
+  {
+    if (firstRender)
+    {
+      objRef = DotNetObjectReference.Create(this);
+      await JSRuntime.InvokeVoidAsync("blazorHelpers.initializeDropdown", DropDownBtnId, DropDownMenuId, objRef);
+    }
+  }
+
+  [JSInvokable]
+  public async Task CloseDropdown()
+  {
+    if (isDropDownOpen)
+    {
+      isDropDownOpen = false;
+      await InvokeAsync(StateHasChanged);
+    }
+  }
+
+  private void ToggleDropDown()
+  {
+    isDropDownOpen = !isDropDownOpen;
+  }
+
+  public async ValueTask DisposeAsync()
+  {
+    await JSRuntime.InvokeVoidAsync("blazorHelpers.cleanUpDropdown");
+  }
+
+  private void SelectOption(Type formType)
+  {
+    customerFormType = formType;
+    isDropDownOpen = false;
+  }
 
 }

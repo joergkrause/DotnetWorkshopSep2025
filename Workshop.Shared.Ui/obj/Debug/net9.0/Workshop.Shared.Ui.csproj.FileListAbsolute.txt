@@ -19,7 +19,6 @@ X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\scopedcss\bundle\Workshop.Shared.Ui.styles.css
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\scopedcss\projectbundle\Workshop.Shared.Ui.bundle.scp.css
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\compressed\oe9w7hrf9j-d155qmw4en.gz
-X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\compressed\kzprt1dymg-qbuo6d3f9v.gz
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\compressed\d9sc0yjm5q-u9i47esebg.gz
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\compressed\o4ck06jfsw-5ipweew5fc.gz
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\compressed\fxmp6sonjv-6pqz8bsss0.gz
@@ -40,3 +39,4 @@ X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\refint\Workshop.Shared.Ui.dll
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\Workshop.Shared.Ui.pdb
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\ref\Workshop.Shared.Ui.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\compressed\kzprt1dymg-jsmgxemk3m.gz

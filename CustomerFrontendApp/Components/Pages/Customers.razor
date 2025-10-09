@@ -1,27 +1,43 @@
 ﻿@page "/Customers"
+@using Workshop.Shared.Ui.Components.Conditions
+@using Workshop.Shared.Ui.Components.Repeaters
 @using Workshop.Shared.Ui.Components.Tabs
 
 <PageTitle>Customers</PageTitle>
 
 <h3>@tabName</h3>
 
-@* <Tabs>
-  <TabPage Title="Customers List">
-    Inhalt...
-  </TabPage>
-  <TabPage Title="Add New Customer">
-    Inhalt...
-  </TabPage>
-  <TabPage Title="Customer Reports">
-    Inhalt...
-  </TabPage>
-</Tabs> *@
+<ErrorBoundary>
+  <ChildContent>
+    <Condition Check="@(tabName == "list")"></Condition>
+  </ChildContent>
+  <ErrorContent>
+    <div class="alert alert-danger" role="alert">
+      An error occurred while loading the customers page.
+      @context.Message
+    </div>
+  </ErrorContent>
+</ErrorBoundary>
+
+<Condition Check="@(tabName == "reports")">
+  <If>
+    <div class="alert alert-info" role="alert">
+      We have new customer reports!
+    </div>
+  </If>
+</Condition>
+
+<ol>
+  <Repeater Items="[1, 2, 3]" ItemType="int" Context="item">
+    <li>Nummer: @item</li>
+  </Repeater>
+</ol>
 
 <Tabs OnActiveTab="OnActiveTab">
   <Items>
-    <Item Name="list">Customers List</Item>    
-    <Item Name="reports">Customer Reports</Item>
-    <Item Name="add">Add New Customer</Item>    
+    <Repeater Items="TabsFromDatabase">
+      <Item Name="@context">Customers @context.ToUpper()</Item>
+    </Repeater>
   </Items>
   <Panels>
     <Panel Name="list">
@@ -43,6 +59,7 @@
 @code {
 
   private string? tabName;
+  private List<string> TabsFromDatabase => new() { "list", "reports" };
 
   private void OnActiveTab(string name)
   {
