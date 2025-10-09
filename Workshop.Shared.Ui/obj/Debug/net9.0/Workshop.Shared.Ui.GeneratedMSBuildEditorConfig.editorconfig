@@ -20,6 +20,26 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/Workshop.Shared.Ui/Components/Tabs/Item.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJzXEl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/Workshop.Shared.Ui/Components/Tabs/Items.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJzXEl0ZW1zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/Workshop.Shared.Ui/Components/Tabs/Panel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJzXFBhbmVsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/Workshop.Shared.Ui/Components/Tabs/Panels.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJzXFBhbmVscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Apps/Customers/qh/workshop/DotnetWorkshop/Workshop.Shared.Ui/Components/Tabs/Tabs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJzXFRhYnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [X:/Apps/Customers/qh/workshop/DotnetWorkshop/Workshop.Shared.Ui/Forms/InputElement.razor]
 build_metadata.AdditionalFiles.TargetPath = Rm9ybXNcSW5wdXRFbGVtZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

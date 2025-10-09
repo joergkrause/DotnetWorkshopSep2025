@@ -1,8 +1,43 @@
 ﻿@page "/Customers"
+@using Workshop.Shared.Ui.Components.Tabs
 
 <PageTitle>Customers</PageTitle>
 
 <h3>Customers</h3>
+
+@* <Tabs>
+  <TabPage Title="Customers List">
+    Inhalt...
+  </TabPage>
+  <TabPage Title="Add New Customer">
+    Inhalt...
+  </TabPage>
+  <TabPage Title="Customer Reports">
+    Inhalt...
+  </TabPage>
+</Tabs> *@
+
+<Tabs>
+  <Items>
+    <Item>Customers List</Item>    
+    <Item>Add New Customer</Item>
+    <Item>Customer Reports</Item>
+  </Items>
+  <Panels>
+    <Panel>
+      <h4>Customers List</h4>
+      <p>View and manage your customers.</p>
+    </Panel>
+    <Panel>
+      <h4>Add New Customer</h4>
+      <p>Create a new customer profile.</p>
+    </Panel>
+    <Panel>
+      <h4>Customer Reports</h4>
+      <p>Generate and view customer reports.</p>
+    </Panel>
+  </Panels>
+</Tabs>
 
 <CustomersList></CustomersList>
 

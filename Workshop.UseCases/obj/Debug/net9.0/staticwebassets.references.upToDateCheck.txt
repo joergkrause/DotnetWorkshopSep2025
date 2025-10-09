@@ -1,1 +1,5 @@
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\staticwebassets.build.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\staticwebassets.build.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\staticwebassets.build.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\staticwebassets.build.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Shared.Ui\obj\Debug\net9.0\staticwebassets.build.json
