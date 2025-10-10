@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RunSettings>
   <RunConfiguration>
-    <ResultsDirectory>X:\Apps\Customers\qh\project\WorkshopProject\Workshop.Backend.Tests\bin\Debug\net9.0\fine-code-coverage\coverage-tool-output</ResultsDirectory>
+    <ResultsDirectory>X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.Backend.Tests\bin\Debug\net9.0\fine-code-coverage\coverage-tool-output</ResultsDirectory>
     <TestAdaptersPaths>C:\Users\joerg\AppData\Local\FineCodeCoverage\msCodeCoverage\17.13.0\build\netstandard2.0</TestAdaptersPaths>
     <CollectSourceInformation>False</CollectSourceInformation>
   </RunConfiguration>

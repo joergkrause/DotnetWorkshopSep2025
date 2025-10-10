@@ -1,2 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Hotspots />
+<Hotspots>
+  <Hotspot>
+    <Assembly>Bunit.Web</Assembly>
+    <Class>Bunit.Web.AngleSharp.WrapperExtensions</Class>
+    <MethodName>WrapUsing&lt;TElementFactory&gt;(...)</MethodName>
+    <ShortName />
+    <Line></Line>
+    <FileIndex>0</FileIndex>
+    <Metrics>
+      <Metric>
+        <Name>Cyclomatic complexity</Name>
+        <Exceeded>true</Exceeded>
+        <Value>144</Value>
+      </Metric>
+    </Metrics>
+  </Hotspot>
+  <Hotspot>
+    <Assembly>Bunit.Web</Assembly>
+    <Class>Bunit.JSRuntimeUnhandledInvocationException</Class>
+    <MethodName>GetReturnTypeName(...)</MethodName>
+    <ShortName />
+    <Line></Line>
+    <FileIndex>0</FileIndex>
+    <Metrics>
+      <Metric>
+        <Name>Cyclomatic complexity</Name>
+        <Exceeded>true</Exceeded>
+        <Value>57</Value>
+      </Metric>
+    </Metrics>
+  </Hotspot>
+  <Hotspot>
+    <Assembly>Workshop.UseCases</Assembly>
+    <Class>Workshop.UseCases.Services.AuthenticationDelegatingHandler</Class>
+    <MethodName>IsStandardClaim(...)</MethodName>
+    <ShortName />
+    <Line>122</Line>
+    <FileIndex>0</FileIndex>
+    <Metrics>
+      <Metric>
+        <Name>Cyclomatic complexity</Name>
+        <Exceeded>true</Exceeded>
+        <Value>46</Value>
+      </Metric>
+    </Metrics>
+  </Hotspot>
+</Hotspots>

@@ -61,6 +61,7 @@
         "targetAlias": "net9.0",
         "centralPackageVersions": {
           "Asp.Versioning.Http": "8.1.0",
+          "bunit": "1.40.0",
           "FluentValidation": "12.0.0",
           "FluentValidation.DependencyInjectionExtensions": "12.0.0",
           "Fluxor": "6.8.0",

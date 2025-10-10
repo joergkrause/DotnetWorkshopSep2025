@@ -32,3 +32,11 @@ X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\obj\Debug\net9
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\obj\Debug\net9.0\Workshop.BackendRest.pdb
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\obj\Debug\net9.0\Workshop.BackendRest.genruntimeconfig.cache
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\obj\Debug\net9.0\ref\Workshop.BackendRest.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\Workshop.BackendRest\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll

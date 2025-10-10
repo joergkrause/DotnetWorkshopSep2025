@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Workshop.DomainModels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13ce0b4e5df49b85503473c2284b797964b54ffa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d596d8748319c701a6f67cc5e1622e2d66aae172")]
 [assembly: System.Reflection.AssemblyProductAttribute("Workshop.DomainModels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Workshop.DomainModels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
