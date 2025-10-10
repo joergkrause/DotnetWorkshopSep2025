@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rUqPECpG1UI=",
+  "dgSpecHash": "JY+SB/ajOII=",
   "success": true,
   "projectFilePath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.Shared.Ui\\Workshop.Shared.Ui.csproj",
   "expectedPackageFiles": [
+    "D:\\Packages\\fluxor\\6.8.0\\fluxor.6.8.0.nupkg.sha512",
+    "D:\\Packages\\fluxor.blazor.web\\6.8.0\\fluxor.blazor.web.6.8.0.nupkg.sha512",
     "D:\\Packages\\microsoft.aspnetcore.authorization\\9.0.9\\microsoft.aspnetcore.authorization.9.0.9.nupkg.sha512",
     "D:\\Packages\\microsoft.aspnetcore.components\\9.0.9\\microsoft.aspnetcore.components.9.0.9.nupkg.sha512",
     "D:\\Packages\\microsoft.aspnetcore.components.analyzers\\9.0.9\\microsoft.aspnetcore.components.analyzers.9.0.9.nupkg.sha512",

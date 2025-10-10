@@ -16,6 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="Fluxor" />
         <PackageReference Include="Mapster" />
         <PackageReference Include="Mapster.DependencyInjection" />
         <PackageReference Include="Microsoft.AspNetCore.Components.Web" />

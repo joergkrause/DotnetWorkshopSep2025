@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fD0q9ZMQcCQ=",
+  "dgSpecHash": "FnbK46Re+Vc=",
   "success": true,
   "projectFilePath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\Workshop.UseCases\\Workshop.UseCases.csproj",
   "expectedPackageFiles": [
+    "D:\\Packages\\fluxor\\6.8.0\\fluxor.6.8.0.nupkg.sha512",
+    "D:\\Packages\\fluxor.blazor.web\\6.8.0\\fluxor.blazor.web.6.8.0.nupkg.sha512",
     "D:\\Packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
     "D:\\Packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
     "D:\\Packages\\mapster.dependencyinjection\\1.0.1\\mapster.dependencyinjection.1.0.1.nupkg.sha512",

@@ -1,59 +1,59 @@
-﻿@inject ICustomerApiService CustomerApiService
+﻿@using Fluxor
+@using Workshop.Shared.Ui.Components.Conditions
+@using Workshop.Shared.Ui.Flux
+@using Workshop.UseCases.Stores.Customers
+@using static Workshop.UseCases.Stores.Customers.CustomerActions
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Name</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    @foreach (var customer in customers)
-    {
-      <tr @key="customer.Id">
-        <td>@customer.Id</td>
-        <td>@customer.Name</td>
-        <td>
-             <button type="button" class="btn btn-primary" @onclick="@(() => EditCustomer(customer.Id))">Edit</button>
-        </td>
-      </tr>
-    }
-  </tbody>
-</table>
+@inherits FluxComponent<CustomerState>
 
-@if (selectedCustomerId != 0)
+<Condition Check="State.Value.IsLoading">
+  <If>
+    <i class="bx bx-loader-circle bx-spin"></i> Loading ...
+  </If>
+  <Else>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach (var customer in Customers)
+        {
+          <tr @key="customer.Id">
+            <td>@customer.Id</td>
+            <td>@customer.Name</td>
+            <td>
+              <button type="button" class="btn btn-primary" @onclick="@(() => Edit(customer.Id))">Edit</button>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </Else>
+</Condition>
+
+@if (SelectedCustomerId != 0)
 {
-  <EditCustomer CustomerId="@selectedCustomerId" OnCustomerSaved="@OnCustomerSaved" />
+  <EditCustomer />
 }
 
 @code {
-  
-  private IList<CustomerListViewModel> customers = new List<CustomerListViewModel>();
-  private int selectedCustomerId;
 
-  protected override async Task OnInitializedAsync()
+  private IEnumerable<CustomerListViewModel> Customers => State.Value.Customers;
+  private int SelectedCustomerId => State.Value.CurrentEditId;
+
+  protected override void OnInitialized()
   {
-    customers = await CustomerApiService.GetAllCustomers();
+    base.OnInitialized();
+    Dispatcher.Dispatch(LoadCustomers());
   }
 
-  private void EditCustomer(int customerId)
+  private void Edit(int customerId)
   {
-    selectedCustomerId = customerId;
+    Dispatcher.Dispatch(EditCustomer(customerId));
   }
 
-  private Task OnCustomerSaved(CustomerEditViewModel updatedCustomer)
-  {
-    // Update the customer in the list
-    var customer = customers.FirstOrDefault(c => c.Id == updatedCustomer.Id);
-    if (customer != null)
-    {
-      customer.Name = updatedCustomer.Name;
-    }
-    // Clear the selected customer to hide the edit form
-    selectedCustomerId = 0;
-    // Optionally, you could refresh the entire list from the server
-    // customers = await CustomerApiService.GetAllCustomers();
-    return Task.CompletedTask;
-  }
 }

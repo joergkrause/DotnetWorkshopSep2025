@@ -2,6 +2,32 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "Fluxor/6.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "[9.0.0, 10.0.0)"
+        },
+        "compile": {
+          "lib/net9.0/Fluxor.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/Fluxor.dll": {}
+        }
+      },
+      "Fluxor.Blazor.Web/6.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Fluxor": "6.8.0",
+          "Microsoft.AspNetCore.Components.Web": "[9.0.0, 10.0.0)",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "[9.0.0, 10.0.0)"
+        },
+        "compile": {
+          "lib/net9.0/Fluxor.Blazor.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/Fluxor.Blazor.Web.dll": {}
+        }
+      },
       "Mapster/7.4.0": {
         "type": "package",
         "dependencies": {
@@ -277,6 +303,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Fluxor": "6.8.0",
+          "Fluxor.Blazor.Web": "6.8.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.9"
         },
         "compile": {
@@ -289,6 +317,35 @@
     }
   },
   "libraries": {
+    "Fluxor/6.8.0": {
+      "sha512": "u2NEmilbTzWyKmCY1p4DRVhpktTEJSfG8oE5q99Nabsn24bYtMq/GHh9b1xSZ00dbanqw5ImOd17GEswZ2bocA==",
+      "type": "package",
+      "path": "fluxor/6.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluxor-small-logo.png",
+        "fluxor.6.8.0.nupkg.sha512",
+        "fluxor.nuspec",
+        "lib/net8.0/Fluxor.dll",
+        "lib/net9.0/Fluxor.dll"
+      ]
+    },
+    "Fluxor.Blazor.Web/6.8.0": {
+      "sha512": "WevVmPzmhK4NZzlUML80i1ECAcyftKZBHcJDuyCcvz4TQ1sDTkhkkJ8ddwl3Iv5cFCUdruOSmAIGwh2bsg3AcA==",
+      "type": "package",
+      "path": "fluxor.blazor.web/6.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/Fluxor.Blazor.Web.Analyzers.dll",
+        "fluxor-blazor-logo-small.png",
+        "fluxor.blazor.web.6.8.0.nupkg.sha512",
+        "fluxor.blazor.web.nuspec",
+        "lib/net8.0/Fluxor.Blazor.Web.dll",
+        "lib/net9.0/Fluxor.Blazor.Web.dll"
+      ]
+    },
     "Mapster/7.4.0": {
       "sha512": "RYGoDqvS4WTKIq0HDyPBBVIj6N0mluOCXQ1Vk95JKseMHEsbCXSEGKSlP95oL+s42IXAXbqvHj7p0YaRBUcfqg==",
       "type": "package",
@@ -1324,6 +1381,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Fluxor >= 6.8.0",
       "Mapster >= 7.4.0",
       "Mapster.DependencyInjection >= 1.0.1",
       "Microsoft.AspNetCore.Components.Web >= 9.0.9",
@@ -1390,6 +1448,11 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "Fluxor": {
+            "target": "Package",
+            "version": "[6.8.0, )",
+            "versionCentrallyManaged": true
+          },
           "Mapster": {
             "target": "Package",
             "version": "[7.4.0, )",
@@ -1429,6 +1492,8 @@
           "Asp.Versioning.Http": "8.1.0",
           "FluentValidation": "12.0.0",
           "FluentValidation.DependencyInjectionExtensions": "12.0.0",
+          "Fluxor": "6.8.0",
+          "Fluxor.Blazor.Web": "6.8.0",
           "Grpc.AspNetCore": "2.49.0",
           "Grpc.Core.Testing": "2.46.6",
           "Mapster": "7.4.0",

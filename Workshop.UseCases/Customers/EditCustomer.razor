@@ -1,11 +1,15 @@
 ﻿@using Microsoft.AspNetCore.Components.Forms
+@using Workshop.Shared.Ui.Flux
 @using Workshop.Shared.Ui.Forms
-@inject ICustomerApiService CustomerApiService
+@using Workshop.UseCases.Stores.Customers
+@using static Workshop.UseCases.Stores.Customers.CustomerActions
+
+@inherits FluxComponent<CustomerState>
 
 <h3>EditCustomer</h3>
-@if (customer is CustomerEditViewModel editViewModel)
+@if (Customer is not null)
 {
-  <AutoForm TModel="CustomerEditViewModel" Model="editViewModel" OnSubmit="SaveCustomer">
+  <AutoForm TModel="CustomerEditViewModel" Model="Customer" OnSubmit="Save">
     <Buttons>
       <button type="submit" class="btn btn-primary">Save</button>
     </Buttons>
@@ -13,17 +17,17 @@
 
   <hr/>
 
-  <EditForm Model="@editViewModel" OnValidSubmit="@SaveCustomer">
+  <EditForm Model="@Customer" OnValidSubmit="@Save">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    <InputElement ModelType="CustomerEditViewModel" @bind-Value="editViewModel.Name" For="@(() => editViewModel.Name)" Name="@nameof(CustomerEditViewModel.Name)" />
+    <InputElement ModelType="CustomerEditViewModel" @bind-Value="Customer.Name" For="@(() => Customer.Name)" Name="@nameof(CustomerEditViewModel.Name)" />
 
-    <InputElement ModelType="CustomerEditViewModel" @bind-Value="editViewModel.Email" For="@(() => editViewModel.Email)" Name="@nameof(CustomerEditViewModel.Email)" />
+    <InputElement ModelType="CustomerEditViewModel" @bind-Value="Customer.Email" For="@(() => Customer.Email)" Name="@nameof(CustomerEditViewModel.Email)" />
 
-    <InputElement ModelType="CustomerEditViewModel" @bind-Value="editViewModel.Phone" For="@(() => editViewModel.Phone)" Name="@nameof(CustomerEditViewModel.Phone)" />
+    <InputElement ModelType="CustomerEditViewModel" @bind-Value="Customer.Phone" For="@(() => Customer.Phone)" Name="@nameof(CustomerEditViewModel.Phone)" />
 
-    <button type="submit" class="btn btn-success" @onclick="SaveCustomer">Save</button>
+    <button type="submit" class="btn btn-success">Save</button>
   </EditForm>
 
 }
@@ -35,36 +39,13 @@ else
 
 @code {
 
-  private CustomerEditViewModel? customer;
+  private CustomerEditViewModel? Customer => State.Value.CurrentEdit;
 
-  [Parameter, EditorRequired]
-  public int CustomerId { get; set; }
-
-  [Parameter]
-  public EventCallback<CustomerEditViewModel> OnCustomerSaved { get; set; }
-
-  // protected override async Task OnInitializedAsync()
-  // {
-  //   // if (CustomerId != 0)
-  //   // {
-  //   //   customer = await CustomerApiService.GetCustomerById(CustomerId);
-  //   // }
-  // }
-
-  protected override async Task OnParametersSetAsync()
+  private void Save(EditContext context)
   {
-    if (CustomerId != 0)
-    {
-      customer = await CustomerApiService.GetCustomerById(CustomerId);
-    }
-  }
-
-  private async Task SaveCustomer()
-  {
-    if (customer != null && OnCustomerSaved.HasDelegate)
-    {
-      await OnCustomerSaved.InvokeAsync(customer);
-    }
+    var updatedCustomer = context.Model as CustomerEditViewModel;
+    if (updatedCustomer is null) return;
+    Dispatcher.Dispatch(UpdateCustomer(updatedCustomer));
   }
 
 }

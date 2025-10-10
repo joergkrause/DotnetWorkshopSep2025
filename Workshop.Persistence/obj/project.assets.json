@@ -4946,6 +4946,8 @@
           "Asp.Versioning.Http": "8.1.0",
           "FluentValidation": "12.0.0",
           "FluentValidation.DependencyInjectionExtensions": "12.0.0",
+          "Fluxor": "6.8.0",
+          "Fluxor.Blazor.Web": "6.8.0",
           "Grpc.AspNetCore": "2.49.0",
           "Grpc.Core.Testing": "2.46.6",
           "Mapster": "7.4.0",

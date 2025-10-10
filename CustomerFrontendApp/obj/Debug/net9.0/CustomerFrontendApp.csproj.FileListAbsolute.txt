@@ -68,3 +68,5 @@ X:\Apps\Customers\qh\workshop\DotnetWorkshop\CustomerFrontendApp\bin\Debug\net9.
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\CustomerFrontendApp\bin\Debug\net9.0\Mapster.Core.dll
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\CustomerFrontendApp\bin\Debug\net9.0\Mapster.DependencyInjection.dll
 X:\Apps\Customers\qh\workshop\DotnetWorkshop\CustomerFrontendApp\bin\Debug\net9.0\Workshop.UseCases.staticwebassets.runtime.json
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\CustomerFrontendApp\bin\Debug\net9.0\Fluxor.dll
+X:\Apps\Customers\qh\workshop\DotnetWorkshop\CustomerFrontendApp\bin\Debug\net9.0\Fluxor.Blazor.Web.dll

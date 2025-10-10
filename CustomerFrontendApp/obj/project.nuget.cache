@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Moet57ddYOU=",
+  "dgSpecHash": "VlBoX62z9DQ=",
   "success": true,
   "projectFilePath": "X:\\Apps\\Customers\\qh\\workshop\\DotnetWorkshop\\CustomerFrontendApp\\CustomerFrontendApp.csproj",
   "expectedPackageFiles": [
+    "D:\\Packages\\fluxor\\6.8.0\\fluxor.6.8.0.nupkg.sha512",
+    "D:\\Packages\\fluxor.blazor.web\\6.8.0\\fluxor.blazor.web.6.8.0.nupkg.sha512",
     "D:\\Packages\\google.protobuf\\3.21.5\\google.protobuf.3.21.5.nupkg.sha512",
     "D:\\Packages\\grpc.aspnetcore\\2.49.0\\grpc.aspnetcore.2.49.0.nupkg.sha512",
     "D:\\Packages\\grpc.aspnetcore.server\\2.49.0\\grpc.aspnetcore.server.2.49.0.nupkg.sha512",

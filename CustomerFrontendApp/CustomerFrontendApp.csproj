@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Fluxor" />
     <PackageReference Include="Grpc.AspNetCore" />
     <PackageReference Include="Microsoft.Extensions.ApiDescription.Client">
       <PrivateAssets>all</PrivateAssets>

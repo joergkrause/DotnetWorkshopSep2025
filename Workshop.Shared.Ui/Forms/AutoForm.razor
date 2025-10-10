@@ -26,7 +26,7 @@
   public TModel Model { get; set; }
 
   [Parameter]
-  public EventCallback OnSubmit { get; set; }
+  public EventCallback<EditContext> OnSubmit { get; set; }
 
   [Parameter]
   public RenderFragment? Buttons { get; set; }
@@ -35,7 +35,7 @@
   {
     if (OnSubmit.HasDelegate && context.Validate())
     {
-      await OnSubmit.InvokeAsync();
+      await OnSubmit.InvokeAsync(context);
     }
   }
 

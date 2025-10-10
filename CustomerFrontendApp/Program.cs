@@ -1,7 +1,6 @@
-using CustomerFrontendApp;
-using Workshop.UseCases;
+using Fluxor;
 using Workshop.UseCases.Mappings;
-using Workshop.UseCases.Services;
+using Workshop.UseCases.Stores.Customers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +12,11 @@ var builder = WebApplication.CreateBuilder(args);
 // TODO: MemoryCache
 builder.Services.AddMapsterMappings();
 builder.Services.AddServiceDependencies();
+
+builder.Services.AddFluxor(options =>
+{
+  options.ScanAssemblies(typeof(CustomerActions).Assembly);  
+});
 
 builder.Services.AddRazorPages();
 builder.Services.AddRazorComponents()    

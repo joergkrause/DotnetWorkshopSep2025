@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "CustomerFrontendApp/1.0.0": {
         "dependencies": {
+          "Fluxor": "6.8.0",
           "Grpc.AspNetCore": "2.49.0",
           "Microsoft.Extensions.ApiDescription.Client": "7.0.2",
           "NSwag.ApiDescription.Client": "13.18.2",
@@ -17,6 +18,30 @@
         },
         "runtime": {
           "CustomerFrontendApp.dll": {}
+        }
+      },
+      "Fluxor/6.8.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9"
+        },
+        "runtime": {
+          "lib/net9.0/Fluxor.dll": {
+            "assemblyVersion": "6.8.0.0",
+            "fileVersion": "6.8.0.0"
+          }
+        }
+      },
+      "Fluxor.Blazor.Web/6.8.0": {
+        "dependencies": {
+          "Fluxor": "6.8.0",
+          "Microsoft.AspNetCore.Components.Web": "9.0.9",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9"
+        },
+        "runtime": {
+          "lib/net9.0/Fluxor.Blazor.Web.dll": {
+            "assemblyVersion": "6.8.0.0",
+            "fileVersion": "6.8.0.0"
+          }
         }
       },
       "Google.Protobuf/3.21.5": {
@@ -302,6 +327,8 @@
       "System.Memory/4.5.3": {},
       "Workshop.Shared.Ui/1.0.0": {
         "dependencies": {
+          "Fluxor": "6.8.0",
+          "Fluxor.Blazor.Web": "6.8.0",
           "Microsoft.AspNetCore.Components.Web": "9.0.9"
         },
         "runtime": {
@@ -313,6 +340,7 @@
       },
       "Workshop.UseCases/1.0.0": {
         "dependencies": {
+          "Fluxor": "6.8.0",
           "Mapster": "7.4.0",
           "Mapster.DependencyInjection": "1.0.1",
           "Microsoft.AspNetCore.Components.Web": "9.0.9",
@@ -333,6 +361,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Fluxor/6.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u2NEmilbTzWyKmCY1p4DRVhpktTEJSfG8oE5q99Nabsn24bYtMq/GHh9b1xSZ00dbanqw5ImOd17GEswZ2bocA==",
+      "path": "fluxor/6.8.0",
+      "hashPath": "fluxor.6.8.0.nupkg.sha512"
+    },
+    "Fluxor.Blazor.Web/6.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WevVmPzmhK4NZzlUML80i1ECAcyftKZBHcJDuyCcvz4TQ1sDTkhkkJ8ddwl3Iv5cFCUdruOSmAIGwh2bsg3AcA==",
+      "path": "fluxor.blazor.web/6.8.0",
+      "hashPath": "fluxor.blazor.web.6.8.0.nupkg.sha512"
     },
     "Google.Protobuf/3.21.5": {
       "type": "package",
