@@ -1,0 +1,17 @@
+﻿@page "/Account/Logout"
+@using CustomerFrontendApp.Components.Layout
+@using Microsoft.AspNetCore.Identity
+@using Workshop.UseCases.ViewModels
+
+@layout AuthenticationLayout
+
+@inject SignInManager<UserViewModel> SignInManager
+@inject NavigationManager Navigation
+
+@code {
+  protected override async Task OnInitializedAsync()
+  {
+    await SignInManager.SignOutAsync();
+    Navigation.NavigateTo("/", forceLoad: true);
+  }
+}

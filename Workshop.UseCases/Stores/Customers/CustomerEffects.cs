@@ -1,10 +1,11 @@
 ﻿using Fluxor;
+using Microsoft.AspNetCore.Components.Authorization;
 using Workshop.UseCases.Services;
 using static Workshop.UseCases.Stores.Customers.CustomerActions;
 
 namespace Workshop.UseCases.Stores.Customers;
 
-public class CustomerEffects(ICustomerApiService customerApiService)
+public class CustomerEffects(ICustomerApiService customerApiService, AuthenticationStateProvider authenticationState)
 {
 
   [EffectMethod]
@@ -29,6 +30,10 @@ public class CustomerEffects(ICustomerApiService customerApiService)
 
     try
     {
+      var state = await authenticationState.GetAuthenticationStateAsync();
+      var user = state.User;
+      if (!user.IsInRole("Editor")) throw new NotSupportedException();
+
       var editCustomer = await customerApiService.GetCustomerById(action.CustomerId);
       if (editCustomer is null)
       {

@@ -1,5 +1,6 @@
 ﻿using Fluxor;
 using Fluxor.Blazor.Web.Components;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 
 namespace Workshop.Shared.Ui.Flux;

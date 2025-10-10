@@ -2,16 +2,21 @@
 @page "/Customers/Target"
 @page "/Customers/{Target:alpha}"
 
+@attribute [Authorize]
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
 @using Workshop.Shared.Ui.Components.Conditions
 @using Workshop.Shared.Ui.Components.Repeaters
 @using Workshop.Shared.Ui.Components.Tabs
 
 @inject NavigationManager NavManager
+@inject AuthenticationStateProvider AuthenticationState
 
 <PageTitle>Customers</PageTitle>
 
 <h3>@tabName</h3>
-
+               
 <ErrorBoundary>
   <ChildContent>
     <Condition Check="@(tabName == "list")"></Condition>
@@ -63,6 +68,7 @@
 
 @code {
 
+  private string? user;
   private string? tabName;
   private List<string> TabsFromDatabase => new() { "list", "reports" };
 
@@ -72,9 +78,18 @@
   [SupplyParameterFromQuery(Name = "name")]
   public string? QueryTarget { get; set; }
 
+  protected override async Task OnInitializedAsync()
+  {
+    await base.OnInitializedAsync();
+
+    var state = await AuthenticationState.GetAuthenticationStateAsync();
+    user = state.User.Identity?.Name;
+  }
+
   protected override void OnInitialized()
   {
-    base.OnInitialized();
+    base.OnInitialized();    
+
     if (Target is not null && TabsFromDatabase.Contains(Target))
     {
       OnActiveTab(Target);

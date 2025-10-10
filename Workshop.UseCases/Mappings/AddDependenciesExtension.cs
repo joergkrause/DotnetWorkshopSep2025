@@ -15,10 +15,13 @@ public static class AddDependenciesExtension
 {
   public static IServiceCollection AddServiceDependencies(this IServiceCollection services)
   {
-    services.AddSingleton<ICustomerApiService, CustomerApiService>();
-    services.AddSingleton<MinimalApiBackend>(op =>
+    services.AddScoped<ICustomerApiService, CustomerApiService>();
+    services.AddScoped<AuthenticationDelegatingHandler>();
+    services.AddScoped<MinimalApiBackend>(op =>
     {
-      var httpClient = new HttpClient
+      var authenticationHandler = op.GetRequiredService<AuthenticationDelegatingHandler>();
+      authenticationHandler.InnerHandler = new HttpClientHandler();
+      var httpClient = new HttpClient(authenticationHandler)
       {
         BaseAddress = new Uri("https://localhost:7017")
       };

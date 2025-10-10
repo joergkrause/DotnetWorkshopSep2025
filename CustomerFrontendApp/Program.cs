@@ -1,6 +1,10 @@
+using CustomerFrontendApp.Security;
 using Fluxor;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 using Workshop.UseCases.Mappings;
 using Workshop.UseCases.Stores.Customers;
+using Workshop.UseCases.ViewModels;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +16,29 @@ var builder = WebApplication.CreateBuilder(args);
 // TODO: MemoryCache
 builder.Services.AddMapsterMappings();
 builder.Services.AddServiceDependencies();
+
+// Add Identity
+
+builder.Services.AddScoped<IUserStore<UserViewModel>, CustomUserStore>();
+builder.Services.AddScoped<IRoleStore<RoleViewModel>, CustomRoleStore>();
+
+builder.Services.AddIdentityCore<UserViewModel>(options =>
+{
+  options.Password.RequiredLength = 10;
+})
+  .AddRoles<RoleViewModel>()
+  .AddRoleStore<CustomRoleStore>()  
+  .AddUserStore<CustomUserStore>()
+  .AddSignInManager()
+  .AddDefaultTokenProviders()
+  ;
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+  options.LoginPath = "/Account/Login";
+  options.LogoutPath = "/Account/Logout";
+  options.AccessDeniedPath = "/Account/AccessDenied";
+});
 
 builder.Services.AddFluxor(options =>
 {
@@ -33,7 +60,8 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseAntiforgery();
 

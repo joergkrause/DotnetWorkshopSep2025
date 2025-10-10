@@ -53,6 +53,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.9, )",
+              "versionCentrallyManaged": true
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.9, )",
@@ -69,7 +74,9 @@
             "Grpc.Core.Testing": "2.46.6",
             "Mapster": "7.4.0",
             "Mapster.DependencyInjection": "1.0.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.9",
             "Microsoft.AspNetCore.Components.Web": "9.0.9",
+            "Microsoft.AspNetCore.Identity.UI": "9.0.9",
             "Microsoft.AspNetCore.OpenApi": "9.0.9",
             "Microsoft.EntityFrameworkCore": "9.0.9",
             "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",

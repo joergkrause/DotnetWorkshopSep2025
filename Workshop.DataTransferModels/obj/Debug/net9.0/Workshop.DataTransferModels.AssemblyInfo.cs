@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Workshop.DataTransferModels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a9d90fea443470d244134c1826dad688cb99732")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13ce0b4e5df49b85503473c2284b797964b54ffa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Workshop.DataTransferModels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Workshop.DataTransferModels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

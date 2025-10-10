@@ -19,6 +19,7 @@
         <PackageReference Include="Fluxor" />
         <PackageReference Include="Mapster" />
         <PackageReference Include="Mapster.DependencyInjection" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" />
         <PackageReference Include="Microsoft.AspNetCore.Components.Web" />
         <PackageReference Include="Microsoft.Extensions.ApiDescription.Client">
             <PrivateAssets>all</PrivateAssets>

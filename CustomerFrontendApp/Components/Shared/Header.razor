@@ -1,5 +1,30 @@
-﻿<h3>Kundenportal</h3>
-<MainMenu />
+﻿@using Microsoft.AspNetCore.Components.Authorization
+<h3>Kundenportal</h3>
+
+<div class="row">
+  <div class="column">
+    <MainMenu />
+  </div>
+  <div class="column">
+    <div class="float-end">
+      <AuthorizeView>
+        <Authorized>
+          <span class="navbar-text me-3">Hello, @context.User.Identity?.Name!</span>
+          <a href="/Account/Logout" class="btn btn-outline-secondary">Logout</a>
+        </Authorized>
+        <NotAuthorized>
+          <a href="/Account/Login" class="btn btn-outline-primary me-2">Login</a>
+          <a href="/Account/Register" class="btn btn-primary">Register</a>
+        </NotAuthorized>
+      </AuthorizeView>
+      <AuthorizeView Roles="Admin,SuperAdmin,Internal">
+        <Authorized>
+          <a href="/Account/Admin" class="btn btn-primary">Admin Pages</a>
+        </Authorized>
+      </AuthorizeView>
+    </div>
+  </div>
+</div>
 
 @code {
 
