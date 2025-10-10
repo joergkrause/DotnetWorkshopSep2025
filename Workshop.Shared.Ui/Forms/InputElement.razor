@@ -1,8 +1,13 @@
-﻿@typeparam ModelType
+﻿@using Microsoft.AspNetCore.Components.Forms
+@using System.Linq.Expressions
+@typeparam ModelType
 
 <div class="mb-3">
   <label for="@labelName" class="form-label">@Label</label>
   <input type="text" class="form-control" id="@labelName" @bind-value="Value">
+  <span class="small">
+    <ValidationMessage For="@(() => For)" />
+  </span>
 </div>
 
 @code {
@@ -20,6 +25,9 @@
 
   [Parameter, EditorRequired]
   public string Name { get; set; }
+
+  [Parameter]
+  public Expression<Func<object>>? For { get; set; }
 
   private async Task OnValueChanged(ChangeEventArgs e)
   {

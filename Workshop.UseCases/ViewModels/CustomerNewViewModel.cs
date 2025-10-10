@@ -2,28 +2,14 @@
 
 namespace Workshop.UseCases.ViewModels;
 
-[AttributeUsage(AttributeTargets.Property)]
-public class HiddenAttribute : Attribute { }
-
-public class CustomerEditViewModel
+public class CustomerNewViewModel
 {
-  [UIHint("HiddenInput")] // v1
-  [Hidden] // v2
-  public int Id { get; set; }
-
-  [Display(Name = "Vor- und Zuname")]  
-  [Required(ErrorMessage = "Bitte geben Sie Ihren Namen ein."), StringLength(100, ErrorMessage = "Maximal 100 Zeichen erlaubt")]
+  [Required(ErrorMessage = "Bitte geben Sie Ihren Namen ein."), StringLength(100)]
   public string Name { get; set; } = default!;
 
-  [Display(Name = "E-Mail")]
   [Required(ErrorMessage = "Bitte geben Sie Ihre E-Mail-Adresse ein."), EmailAddress(ErrorMessage = "Bitte geben Sie eine gültige E-Mail-Adresse ein.")]
   public string Email { get; set; } = default!;
 
-  [Display(Name = "Telefon")]
   [Required(ErrorMessage = "Bitte geben Sie Ihre Telefonnummer ein."), Phone(ErrorMessage = "Bitte geben Sie eine gültige Telefonnummer ein.")]
   public string Phone { get; set; } = default!;
-
-  [UIHint("Calendar")]
-  [DataType(DataType.Date)]
-  public DateTime Date { get; set; }
 }

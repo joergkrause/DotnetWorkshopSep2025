@@ -1,0 +1,119 @@
+﻿@typeparam TModel
+@using Microsoft.AspNetCore.Components.Forms
+@using System.Linq.Expressions
+@using System.ComponentModel.DataAnnotations
+
+<EditForm Model="Model" OnValidSubmit="@ValidSubmit">
+  <DataAnnotationsValidator />
+  <ValidationSummary />
+  @foreach (var field in GetFields())
+  {
+    <InputElement ModelType="TModel" 
+                  Value="@field.Value" 
+                  ValueChanged="@((value) => UpdateModelProperty(field.Name, value))"
+                  For="field.Expression" 
+                  Name="@field.Name" />
+  }
+  <div class="m-3">
+    @Buttons
+  </div>
+</EditForm>
+
+@code
+{
+
+  [Parameter, EditorRequired]
+  public TModel Model { get; set; }
+
+  [Parameter]
+  public EventCallback OnSubmit { get; set; }
+
+  [Parameter]
+  public RenderFragment? Buttons { get; set; }
+
+  private async Task ValidSubmit(EditContext context)
+  {
+    if (OnSubmit.HasDelegate && context.Validate())
+    {
+      await OnSubmit.InvokeAsync();
+    }
+  }
+
+  private List<Field> GetFields()
+  {
+    var properties = typeof(TModel).GetProperties().Where(p => !p.GetCustomAttributes(true).Any(a => a is UIHintAttribute));
+    var parameter = Expression.Parameter(typeof(TModel), "p");
+    return properties.Select(p => new Field
+    {
+      Label = p.Name,
+      Name = p.Name,
+      Expression = CreatePropertyExpression(p),
+      Value = GetPropertyValue(p)
+    }).ToList();
+
+    string GetPropertyValue(System.Reflection.PropertyInfo property)
+    {
+      if (Model != null)
+      {
+        var value = property.GetValue(Model);
+        return value?.ToString() ?? string.Empty;
+      }
+      return string.Empty;
+    }
+
+    Expression<Func<object>> CreatePropertyExpression(System.Reflection.PropertyInfo property)
+    {
+      // Create a lambda that captures the current model instance and returns the property value
+      var modelConstant = Expression.Constant(Model, typeof(TModel));
+      var propertyAccess = Expression.Property(modelConstant, property);
+      var convertToObject = Expression.Convert(propertyAccess, typeof(object));
+
+      return Expression.Lambda<Func<object>>(convertToObject);
+    }
+
+  }
+
+  private void UpdateModelProperty(string propertyName, string value)
+  {
+    var property = typeof(TModel).GetProperty(propertyName);
+    if (property != null && Model != null)
+    {
+      // Convert string value to the property's actual type
+      var convertedValue = ConvertValue(value, property.PropertyType);
+      property.SetValue(Model, convertedValue);
+    }
+  }
+
+  private object? ConvertValue(string value, Type targetType)
+  {
+    if (string.IsNullOrEmpty(value))
+      return targetType.IsValueType ? Activator.CreateInstance(targetType) : null;
+
+    var nullableType = Nullable.GetUnderlyingType(targetType);
+    var actualType = nullableType ?? targetType;
+
+    return actualType switch
+    {
+      Type when actualType == typeof(string) => value,
+      Type when actualType == typeof(int) => int.Parse(value),
+      Type when actualType == typeof(decimal) => decimal.Parse(value),
+      Type when actualType == typeof(DateTime) => DateTime.Parse(value),
+      Type when actualType == typeof(bool) => bool.Parse(value),
+      _ => Convert.ChangeType(value, actualType)
+    };
+  }
+
+
+  class Field
+  {
+    public string Label { get; set; } = default!;
+
+    public string Name { get; set; } = default!;
+
+    public Expression<Func<object>>? Expression { get; set; }
+
+    public string Value { get; set; } = string.Empty;
+
+  }
+
+}

@@ -8,11 +8,11 @@
     {
       var name = tab.Key;
       <li class="nav-item" role="presentation">
-        <button class="nav-link @(name == ActiveTabName ? "active" : "")"
+        <button class="nav-link @(name == ActiveTab ? "active" : "")"
                 id="tab-@name"
                 role="tab"
                 aria-controls="panel-@name"
-                aria-selected="@(name == ActiveTabName ? "true" : "false")"
+                aria-selected="@(name == ActiveTab ? "true" : "false")"
                 @onclick="() => SetActiveTab(name)">
           @(_tabItems[name])
         </button>
@@ -23,7 +23,7 @@
     @foreach (var panel in _tabPanels)
     {
       var name = panel.Key;
-      <div class="tab-pane @(name == ActiveTabName ? "active show" : "d-none")"
+      <div class="tab-pane @(name == ActiveTab ? "active show" : "d-none")"
            id="panel-@name"
            role="tabpanel"
            aria-labelledby="tab-@name">
@@ -36,13 +36,13 @@
 @code {
 
   [Parameter]
-  public string? ActiveTabName { get; set; }
-
-  [Parameter]
   public RenderFragment? ChildContent { get; set; }
 
   [Parameter]
-  public EventCallback<string> OnActiveTab { get; set; }
+  public string ActiveTab { get; set; } = default!;
+
+  [Parameter]
+  public EventCallback<string> ActiveTabChanged { get; set; }
 
   private readonly Dictionary<string, RenderFragment> _tabItems = new();
   private readonly Dictionary<string, RenderFragment> _tabPanels = new();
@@ -83,10 +83,10 @@
 
   private async void SetActiveTab(string name)
   {
-    ActiveTabName = name;
-    if (OnActiveTab.HasDelegate)
+    ActiveTab = name;
+    if (ActiveTabChanged.HasDelegate)
     {
-      await OnActiveTab.InvokeAsync(name);
+      await ActiveTabChanged.InvokeAsync(name);
     }
     StateHasChanged();
   }

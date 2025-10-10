@@ -1,11 +1,31 @@
-﻿@using Workshop.Shared.Ui.Forms
+﻿@using Microsoft.AspNetCore.Components.Forms
+@using Workshop.Shared.Ui.Forms
 @inject ICustomerApiService CustomerApiService
 
 <h3>EditCustomer</h3>
 @if (customer is CustomerEditViewModel editViewModel)
 {
-  <InputElement ModelType="CustomerEditViewModel" Name="Name" @bind-Value="editViewModel.Name"></InputElement>
-  <button class="btn btn-primary" @onclick="SaveCustomer">Save</button>
+  <AutoForm TModel="CustomerEditViewModel" Model="editViewModel" OnSubmit="SaveCustomer">
+    <Buttons>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </Buttons>
+  </AutoForm>
+
+  <hr/>
+
+  <EditForm Model="@editViewModel" OnValidSubmit="@SaveCustomer">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputElement ModelType="CustomerEditViewModel" @bind-Value="editViewModel.Name" For="@(() => editViewModel.Name)" Name="@nameof(CustomerEditViewModel.Name)" />
+
+    <InputElement ModelType="CustomerEditViewModel" @bind-Value="editViewModel.Email" For="@(() => editViewModel.Email)" Name="@nameof(CustomerEditViewModel.Email)" />
+
+    <InputElement ModelType="CustomerEditViewModel" @bind-Value="editViewModel.Phone" For="@(() => editViewModel.Phone)" Name="@nameof(CustomerEditViewModel.Phone)" />
+
+    <button type="submit" class="btn btn-success" @onclick="SaveCustomer">Save</button>
+  </EditForm>
+
 }
 else
 {
@@ -28,7 +48,7 @@ else
   //   // if (CustomerId != 0)
   //   // {
   //   //   customer = await CustomerApiService.GetCustomerById(CustomerId);
-  //   // }    
+  //   // }
   // }
 
   protected override async Task OnParametersSetAsync()

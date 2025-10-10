@@ -14,7 +14,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMapsterMappings();
 builder.Services.AddServiceDependencies();
 
-builder.Services.AddRazorComponents()
+builder.Services.AddRazorPages();
+builder.Services.AddRazorComponents()    
     .AddInteractiveServerComponents();
 
 var app = builder.Build();
@@ -33,7 +34,7 @@ app.UseHttpsRedirection();
 app.UseAntiforgery();
 
 app.MapStaticAssets();
-app.MapRazorComponents<CustomerFrontendApp.Components.App>()
+app.MapRazorComponents<CustomerFrontendApp.Components.App>()    
     .AddInteractiveServerRenderMode();
 
 app.Run();

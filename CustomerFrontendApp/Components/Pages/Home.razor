@@ -1,7 +1,7 @@
 ﻿@page "/"
 @using Workshop.Shared.Ui.Components.Conditions
 
-@implements IAsyncDisposable
+@* @implements IAsyncDisposable *@
 
 @inject IJSRuntime JSRuntime
 
@@ -60,10 +60,10 @@
     isDropDownOpen = !isDropDownOpen;
   }
 
-  public async ValueTask DisposeAsync()
-  {
-    await JSRuntime.InvokeVoidAsync("blazorHelpers.cleanUpDropdown");
-  }
+  // public async ValueTask DisposeAsync()
+  // {
+  //   await JSRuntime.InvokeVoidAsync("blazorHelpers.cleanUpDropdown");
+  // }
 
   private void SelectOption(Type formType)
   {

@@ -1,7 +1,12 @@
 ﻿@page "/Customers"
+@page "/Customers/Target"
+@page "/Customers/{Target:alpha}"
+
 @using Workshop.Shared.Ui.Components.Conditions
 @using Workshop.Shared.Ui.Components.Repeaters
 @using Workshop.Shared.Ui.Components.Tabs
+
+@inject NavigationManager NavManager
 
 <PageTitle>Customers</PageTitle>
 
@@ -28,12 +33,12 @@
 </Condition>
 
 <ol>
-  <Repeater Items="[1, 2, 3]" ItemType="int" Context="item">
-    <li>Nummer: @item</li>
+  <Repeater Items="@TabsFromDatabase" ItemType="string" Context="item">
+    <li>Navigiere zu <button type="button" class="btn btn-xs btn-success" @onclick="@(() => NavigateTo(item))">@item</button> </li>
   </Repeater>
 </ol>
 
-<Tabs OnActiveTab="OnActiveTab">
+<Tabs @bind-ActiveTab="tabName">
   <Items>
     <Repeater Items="TabsFromDatabase">
       <Item Name="@context">Customers @context.ToUpper()</Item>
@@ -60,6 +65,31 @@
 
   private string? tabName;
   private List<string> TabsFromDatabase => new() { "list", "reports" };
+
+  [Parameter]
+  public string? Target { get; set; }
+
+  [SupplyParameterFromQuery(Name = "name")]
+  public string? QueryTarget { get; set; }
+
+  protected override void OnInitialized()
+  {
+    base.OnInitialized();
+    if (Target is not null && TabsFromDatabase.Contains(Target))
+    {
+      OnActiveTab(Target);
+    }
+    else if (QueryTarget is not null && TabsFromDatabase.Contains(QueryTarget))
+    {
+      OnActiveTab(QueryTarget);
+    }
+  }
+
+  private void NavigateTo(string target)
+  {
+    NavManager.NavigateTo($"/Customers/{target}");
+    OnActiveTab(target);
+  }
 
   private void OnActiveTab(string name)
   {
